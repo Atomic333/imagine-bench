@@ -1,0 +1,354 @@
+{
+  "scope": "Retained offscreen native Blackmuse direct-light comparison images; zero diffuse continuation. Display-referred AgX, EV 0.",
+  "sceneSourceSha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+  "sourceFixtureJsonSha256": "9bfc175b2e1171ad3de25cbc337b62a1d33c51511e1370af423a9de873f24850",
+  "comparatorSha256": "3cfe8372699d6218b4190ee2e9798be578b0ef74e49bb8605bd1eab89478ea66",
+  "sourceEvidenceArchiveSha256": "6ddab2b1dbeddd49bfe466c6ca038a273349bbe6f0f50df60065bc0d86257e00",
+  "samples": 16,
+  "spatialSamplesPerPixel": 4,
+  "diffuseContinuations": 0,
+  "cases": {
+    "direct/cam_A": {
+      "capture": "captures/direct/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct.png",
+      "sourceCaptureSha256": "a710f3d618717699a6c2f390ca8651f32176f230041786e08bc821a9fae8d235",
+      "sourceReferenceSha256": "c60c89b19f83c8c4feb4cd6a501f3f27c54d9f9b6cfb7a126f5b472ad9fdf8aa",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 1.577,
+      "p95": 5.612,
+      "p99": 10.395,
+      "perMaterial": {
+        "M_FloorPlanks": 1.714,
+        "M_IronRust": 1.048,
+        "M_LanternGlass": 0.101,
+        "M_Plaster": 1.642,
+        "M_WoodDark": 1.032,
+        "M_WoodDark.Crate_01": 0.952,
+        "M_WoodDark.Crate_02": 1.07
+      }
+    },
+    "direct/cam_B": {
+      "capture": "captures/direct/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct.png",
+      "sourceCaptureSha256": "28c44aa7e631e571ee891224829862b8bd1f7db30c36748f5cc4de47d8bbb042",
+      "sourceReferenceSha256": "0d87d66e191fb42bd51b078186c5105a9be3da45ddb6c6b99484a96b69a7a1dc",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 0.986,
+      "p95": 3.904,
+      "p99": 8.726,
+      "perMaterial": {
+        "M_FloorPlanks": 1.992,
+        "M_IronRust": 0.893,
+        "M_LanternGlass": 0.135,
+        "M_Plaster": 0.201,
+        "M_WoodDark": 0.468,
+        "M_WoodDark.Crate_01": 0.393,
+        "M_WoodDark.Crate_02": 0.588
+      }
+    },
+    "direct/cam_C": {
+      "capture": "captures/direct/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct.png",
+      "sourceCaptureSha256": "4a9750d7182f47b53511a563d30fbbf8a08ce141a5fa6624e3ecf101a673eaf4",
+      "sourceReferenceSha256": "536483b8b2db9692c419eb43bfb837e468cf76f432c5e3cf7c7dd0f3f82184aa",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 1.036,
+      "p95": 3.93,
+      "p99": 7.495,
+      "perMaterial": {
+        "M_FloorPlanks": 1.425,
+        "M_IronRust": 0.889,
+        "M_LanternGlass": 0.084,
+        "M_Plaster": 0.676,
+        "M_WoodDark": 0.543,
+        "M_WoodDark.Crate_01": 0.576,
+        "M_WoodDark.Crate_02": 0.68
+      }
+    },
+    "direct_area/cam_A": {
+      "capture": "captures/direct_area/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct_area.png",
+      "sourceCaptureSha256": "41a623d04e93d1e97e2a33aff84ba9aee103feeb546e3575fc952712ad2fc548",
+      "sourceReferenceSha256": "751e7cb17ca3f50c2825c8fa7dd69c029d2f7163a6470531b58525f17888ed8e",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 1.776,
+      "p95": 6.082,
+      "p99": 10.824,
+      "perMaterial": {
+        "M_FloorPlanks": 2.037,
+        "M_IronRust": 0.909,
+        "M_LanternGlass": 0.345,
+        "M_Plaster": 1.8,
+        "M_WoodDark": 1.207,
+        "M_WoodDark.Crate_01": 0.855,
+        "M_WoodDark.Crate_02": 1.236
+      }
+    },
+    "direct_area/cam_B": {
+      "capture": "captures/direct_area/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct_area.png",
+      "sourceCaptureSha256": "53855d1eef3afc6e723a753b9db3f3ae934d411a5983c3e2c9235e007da9f49f",
+      "sourceReferenceSha256": "5daea70b0e0b09ff2429988ab4021aecd2ee508cca37abd0cc52c4bfc6ec7293",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 1.011,
+      "p95": 4.546,
+      "p99": 9.869,
+      "perMaterial": {
+        "M_FloorPlanks": 2.342,
+        "M_IronRust": 0.695,
+        "M_LanternGlass": 0.483,
+        "M_Plaster": 0.423,
+        "M_WoodDark": 0.426,
+        "M_WoodDark.Crate_01": 0.367,
+        "M_WoodDark.Crate_02": 0.749
+      }
+    },
+    "direct_area/cam_C": {
+      "capture": "captures/direct_area/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct_area.png",
+      "sourceCaptureSha256": "30db7dc95c197df862b284f61f037de52adc60f6dac3de0809183a807c23eb4f",
+      "sourceReferenceSha256": "4f130921b04921dc2bab813ec51ed908c2795d2e242f7531c66a92a126cf2e12",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 1.282,
+      "p95": 4.759,
+      "p99": 8.908,
+      "perMaterial": {
+        "M_FloorPlanks": 1.799,
+        "M_IronRust": 0.748,
+        "M_LanternGlass": 0.488,
+        "M_Plaster": 0.846,
+        "M_WoodDark": 0.851,
+        "M_WoodDark.Crate_01": 0.622,
+        "M_WoodDark.Crate_02": 1.004
+      }
+    },
+    "direct_point/cam_A": {
+      "capture": "captures/direct_point/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct_point.png",
+      "sourceCaptureSha256": "2bbba9eb46df0ea02d87b992c0c673aa1cf1e1eedcf1930e5ac73fc05bd056ff",
+      "sourceReferenceSha256": "ee2470a7d15a3bd0c7bca5359a66f679525f9795cebc7b72742f79fe288e03ec",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 1.984,
+      "p95": 7.891,
+      "p99": 17.739,
+      "perMaterial": {
+        "M_FloorPlanks": 2.139,
+        "M_IronRust": 1.257,
+        "M_LanternGlass": 0.107,
+        "M_Plaster": 2.075,
+        "M_WoodDark": 1.378,
+        "M_WoodDark.Crate_01": 0.945,
+        "M_WoodDark.Crate_02": 1.777
+      }
+    },
+    "direct_point/cam_B": {
+      "capture": "captures/direct_point/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct_point.png",
+      "sourceCaptureSha256": "8c3e9a95ecb7c283926601e032df5914db354d96b814cda5108011110ed7bd3d",
+      "sourceReferenceSha256": "5572872b66bae3443a9639c06f4bbbae8dd5564367d8aae15661a6ef6d27e4e7",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 1.097,
+      "p95": 4.589,
+      "p99": 11.982,
+      "perMaterial": {
+        "M_FloorPlanks": 2.314,
+        "M_IronRust": 0.841,
+        "M_LanternGlass": 0.127,
+        "M_Plaster": 0.2,
+        "M_WoodDark": 0.469,
+        "M_WoodDark.Crate_01": 0.378,
+        "M_WoodDark.Crate_02": 0.668
+      }
+    },
+    "direct_point/cam_C": {
+      "capture": "captures/direct_point/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct_point.png",
+      "sourceCaptureSha256": "928334090229590028a8dd797619245d6869a95d05b819ffd2cca049d933b31f",
+      "sourceReferenceSha256": "e24bcc9e7d39cb3b6eb2dd4c36519ff793e82b4e122405e3335ccbc4dd65021b",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 1.17,
+      "p95": 4.465,
+      "p99": 10.659,
+      "perMaterial": {
+        "M_FloorPlanks": 1.58,
+        "M_IronRust": 0.9,
+        "M_LanternGlass": 0.061,
+        "M_Plaster": 0.826,
+        "M_WoodDark": 0.602,
+        "M_WoodDark.Crate_01": 0.564,
+        "M_WoodDark.Crate_02": 0.896
+      }
+    },
+    "direct_sun/cam_A": {
+      "capture": "captures/direct_sun/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct_sun.png",
+      "sourceCaptureSha256": "d60ffa1b2ed5a32cb70d0e48a2118af7304dfd9fc024efab19acb4e6e1000bd5",
+      "sourceReferenceSha256": "36a00567c8842eddac561164b40a35bbdd590d5924ff7094563a8d68fef6b3fd",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 0.426,
+      "p95": 0.919,
+      "p99": 1.43,
+      "perMaterial": {
+        "M_FloorPlanks": 0.504,
+        "M_IronRust": 0.523,
+        "M_LanternGlass": 0.209,
+        "M_Plaster": 0.319,
+        "M_WoodDark": 0.676,
+        "M_WoodDark.Crate_01": 0.544,
+        "M_WoodDark.Crate_02": 0.591
+      }
+    },
+    "direct_sun/cam_B": {
+      "capture": "captures/direct_sun/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct_sun.png",
+      "sourceCaptureSha256": "4075ccc66244d53a5407f484a9594262c89a26b23d1833eaf7a0f53995f86fb3",
+      "sourceReferenceSha256": "6e1e9ccde6f13691dbd013d8d56b438b33f0d0cc5dc54c80ebf9c27177c8b400",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 0.363,
+      "p95": 0.932,
+      "p99": 1.439,
+      "perMaterial": {
+        "M_FloorPlanks": 0.584,
+        "M_IronRust": 0.599,
+        "M_LanternGlass": 0.147,
+        "M_Plaster": 0.252,
+        "M_WoodDark": 0.48,
+        "M_WoodDark.Crate_01": 0.392,
+        "M_WoodDark.Crate_02": 0.513
+      }
+    },
+    "direct_sun/cam_C": {
+      "capture": "captures/direct_sun/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct_sun.png",
+      "sourceCaptureSha256": "93d26efc6d7b8b8ab572b6faf3cf062f2884f2b595e44a37e6125c400ccd3843",
+      "sourceReferenceSha256": "62fb963ff49252f6ece437431e29c39498d4973adeaec1a25de922f5250b877a",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 0.403,
+      "p95": 0.918,
+      "p99": 1.406,
+      "perMaterial": {
+        "M_FloorPlanks": 0.499,
+        "M_IronRust": 0.643,
+        "M_LanternGlass": 0.064,
+        "M_Plaster": 0.238,
+        "M_WoodDark": 0.518,
+        "M_WoodDark.Crate_01": 0.44,
+        "M_WoodDark.Crate_02": 0.562
+      }
+    },
+    "direct_world/cam_A": {
+      "capture": "captures/direct_world/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct_world.png",
+      "sourceCaptureSha256": "b648a3973827aeb7646dddfcbf5df7b910f3716b81c1a58d2a80be45e06203b7",
+      "sourceReferenceSha256": "b38341889e94f83b926643eefebe583f24596283b3ef5dfb2f4430df1a3d2e26",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 0.544,
+      "p95": 1.15,
+      "p99": 1.329,
+      "perMaterial": {
+        "M_FloorPlanks": 0.515,
+        "M_IronRust": 0.34,
+        "M_LanternGlass": 0.46,
+        "M_Plaster": 0.596,
+        "M_WoodDark": 0.596,
+        "M_WoodDark.Crate_01": 0.438,
+        "M_WoodDark.Crate_02": 0.504
+      }
+    },
+    "direct_world/cam_B": {
+      "capture": "captures/direct_world/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct_world.png",
+      "sourceCaptureSha256": "f3bfc76034501bf1eb0a5231d1513a781fcb4265df01435a68d47d4417eea7d8",
+      "sourceReferenceSha256": "59dbb037421f7a831e0683ad90d49858bb27514591f0c9374f748197dcd9e37d",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 0.549,
+      "p95": 1.117,
+      "p99": 1.322,
+      "perMaterial": {
+        "M_FloorPlanks": 0.518,
+        "M_IronRust": 0.334,
+        "M_LanternGlass": 0.469,
+        "M_Plaster": 0.572,
+        "M_WoodDark": 0.545,
+        "M_WoodDark.Crate_01": 0.346,
+        "M_WoodDark.Crate_02": 0.564
+      }
+    },
+    "direct_world/cam_C": {
+      "capture": "captures/direct_world/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct_world.png",
+      "sourceCaptureSha256": "4e5f86982cc5e99f5adfcc10307d720fddeca4ca7ecb53a80a61cb5202ff21c5",
+      "sourceReferenceSha256": "6e2fb54bf345573f765c4d85691b4e60a36fff2e97e4d4ac486a964182cf6168",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 0.508,
+      "p95": 1.09,
+      "p99": 1.32,
+      "perMaterial": {
+        "M_FloorPlanks": 0.482,
+        "M_IronRust": 0.363,
+        "M_LanternGlass": 0.464,
+        "M_Plaster": 0.555,
+        "M_WoodDark": 0.574,
+        "M_WoodDark.Crate_01": 0.409,
+        "M_WoodDark.Crate_02": 0.575
+      }
+    },
+    "direct_world_nobump/cam_A": {
+      "capture": "captures/direct_world_nobump/cam_A.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_A_direct_world_nobump.png",
+      "sourceCaptureSha256": "43be731e509e542ba1d09f18bbd09b7410e3db575de6c0df05703bd5b192d6ce",
+      "sourceReferenceSha256": "afb45899cf36b7dda5c44c0a6537636c5b1c3f76b0fc4b3cc7363d06977f7e34",
+      "sourceMaskSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "mean": 0.544,
+      "p95": 1.15,
+      "p99": 1.329,
+      "perMaterial": {
+        "M_FloorPlanks": 0.515,
+        "M_IronRust": 0.34,
+        "M_LanternGlass": 0.46,
+        "M_Plaster": 0.596,
+        "M_WoodDark": 0.596,
+        "M_WoodDark.Crate_01": 0.438,
+        "M_WoodDark.Crate_02": 0.503
+      }
+    },
+    "direct_world_nobump/cam_B": {
+      "capture": "captures/direct_world_nobump/cam_B.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_B_direct_world_nobump.png",
+      "sourceCaptureSha256": "7e74f9d2d502787972621e2d2dbf679e76ad0c680dba5b9cabcdd29a4259fc30",
+      "sourceReferenceSha256": "6a7efbbbe1dfd52daa7f86fcb94df438237c4acd49362cbb4989e5a1f371aeaf",
+      "sourceMaskSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "mean": 0.549,
+      "p95": 1.117,
+      "p99": 1.322,
+      "perMaterial": {
+        "M_FloorPlanks": 0.518,
+        "M_IronRust": 0.334,
+        "M_LanternGlass": 0.469,
+        "M_Plaster": 0.572,
+        "M_WoodDark": 0.545,
+        "M_WoodDark.Crate_01": 0.346,
+        "M_WoodDark.Crate_02": 0.564
+      }
+    },
+    "direct_world_nobump/cam_C": {
+      "capture": "captures/direct_world_nobump/cam_C.png",
+      "reference": "fixtures/fx.workshop.room/ref_cam_C_direct_world_nobump.png",
+      "sourceCaptureSha256": "f734128dbea2df4ced48552e0dea56b9d8d77352797b92c0db118c530fd8a3e2",
+      "sourceReferenceSha256": "ece66b78fb68f161badab843ca2dd1917e417b7a9b8adff02d28aaefc399c23f",
+      "sourceMaskSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "mean": 0.508,
+      "p95": 1.089,
+      "p99": 1.32,
+      "perMaterial": {
+        "M_FloorPlanks": 0.482,
+        "M_IronRust": 0.363,
+        "M_LanternGlass": 0.464,
+        "M_Plaster": 0.555,
+        "M_WoodDark": 0.574,
+        "M_WoodDark.Crate_01": 0.409,
+        "M_WoodDark.Crate_02": 0.575
+      }
+    }
+  }
+}

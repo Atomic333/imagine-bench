@@ -1,0 +1,39 @@
+{
+  "schema": "imagine-bench.import-summary.v1",
+  "fixture": "fx.workshop.room",
+  "upstreamSchema": "imagine-bridge/1",
+  "sourceImportManifestSha256": "cae1c906e0e6899dc1d123c66b17d0e70640e1da47cfc4affb11a1506dcd0f65",
+  "exporterDeclaredBlendSha256": "eb478b27572e961500dff3b77391bbe1a07658687e768ecf2fa6cdab83b94fb7",
+  "observedFixtureBlendSha256": "38ce206d4f4a8741d6c62afdbb17896984190377faae2e5cd708e16895829efc",
+  "sourceScene": "fx_workshop_room",
+  "authoredViewTransform": "AgX",
+  "exposure": 0.0,
+  "exporterPins": {
+    "blender": "5.2.2 LTS",
+    "python": "3.13.13",
+    "usd": "0.26.3",
+    "materialx": "1.39.4"
+  },
+  "usd": {
+    "file": "workshop.usdc",
+    "sha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+    "authoredTextures": [
+      "textures/IMAGINE_LUT_af9954966db0.png",
+      "textures/IMAGINE_LUT_b32d905fec9a.png",
+      "textures/color_0C0F14.exr",
+      "textures/noise_Crate_01_M_WoodDark_Crate_01.png",
+      "textures/noise_Crate_02_M_WoodDark_Crate_02.png",
+      "textures/noise_Crate_03_M_WoodDark.png",
+      "textures/noise_Floor_M_FloorPlanks.png"
+    ]
+  },
+  "textureSha256": {
+    "textures/IMAGINE_LUT_af9954966db0.png": "da1315df64a61ccc31d1813a7c09bf8c86e9fc0462a2a8093bb751a09e71f1b4",
+    "textures/IMAGINE_LUT_b32d905fec9a.png": "bc66be6bc794cb895bf69c574f078c16b137530a4071b553cd7900779c17286f",
+    "textures/color_0C0F14.exr": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
+    "textures/noise_Crate_01_M_WoodDark_Crate_01.png": "97cfe47d96fdee08fea3f34f1494e13fc28b3d7dc7c15200bafc3258461a494c",
+    "textures/noise_Crate_02_M_WoodDark_Crate_02.png": "c3dd91bb724197ac0aa097abc9f8635f3f35d007caa6f80fd453f4adc3dc4423",
+    "textures/noise_Crate_03_M_WoodDark.png": "b6ca14b355fc454be9930d569309c3ab9806cf2599308b3ef8d7245675f130a8",
+    "textures/noise_Floor_M_FloorPlanks.png": "7f5422f3ba7a03a59dfbba53d3de267b4b85d02bc8e909dda507a2b57c698189"
+  }
+}

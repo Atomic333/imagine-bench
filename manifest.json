@@ -1,0 +1,473 @@
+{
+  "format": "imagine-bench-release/1",
+  "version": "0.1.0",
+  "date": "2026-11-09",
+  "source": "Blackmuse project-authored benchmark, procedural fixture and captured images",
+  "externalReproduction": "pending",
+  "engineCodeIncluded": false,
+  "learnerDataIncluded": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 35,
+      "sha256": "0b4a7845b38e282b73e0043a31900ca9e0e526ba23e9b6f4f06b33f68655689e",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/agent-bench.json",
+      "bytes": 10613,
+      "sha256": "7c49012792b96b71d44b53909343d24334b5cb35bb8a438d1aa39d3e974ed58f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "agent/graders.py",
+      "bytes": 14683,
+      "sha256": "89eb01592a5b5d947bdad56b847fc8c668310f345e2d0f0b5347b7334488b900",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/PLAN.md",
+      "bytes": 910,
+      "sha256": "0b9c415d108c6faf71afb003c86563247e2f76bf51179b8fd0f47f85990156f2",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/README.md",
+      "bytes": 4651,
+      "sha256": "79302628da60d1ca507d7786f7a33ae2ded22ba9d84251f6f78bf076b2df46f7",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/run.py",
+      "bytes": 5332,
+      "sha256": "0a4a731851d4b8e700f5477da3fcc93c27e17b84808622e67215c3219da31e4c",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/stub.py",
+      "bytes": 9050,
+      "sha256": "d15b5b13f9552caf6a12291212ea4cecfb61edf73e106b46292727bb49e2f268",
+      "license": "MIT"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1093,
+      "sha256": "47599c97a06cf2a0dbde0f1f164ae836488664f3b707d5296240f7a126860635",
+      "license": "MIT"
+    },
+    {
+      "path": "LICENSE-DATA.md",
+      "bytes": 1034,
+      "sha256": "6cdd840b60f9a391d8ac9e51f489ffa971a0b548a37b93211abb114f0d3e2ae3",
+      "license": "MIT"
+    },
+    {
+      "path": "NOTICES.md",
+      "bytes": 1036,
+      "sha256": "bf808c6513b98efcfe5e82904ee87c6fba9036c6721a280bdffde9319dc10256",
+      "license": "MIT"
+    },
+    {
+      "path": "parity/captures/direct/cam_A.png",
+      "bytes": 583990,
+      "sha256": "2ef3c773eb1ccbc8068039d5677f707a2740a2a9e69a44d8d85d423aea81932e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct/cam_B.png",
+      "bytes": 349480,
+      "sha256": "a7d8ed33b9190d1c9bce8448540a73b91855b4b749801e5bcebab8bddfcd897b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct/cam_C.png",
+      "bytes": 508310,
+      "sha256": "9cca6d172932509228b723da704eaffe3575b3f9b8f45821c11143ca798af152",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_area/cam_A.png",
+      "bytes": 649463,
+      "sha256": "2218cc18636ac250f6fa25cadf7b3ffd912eb47b84f47a2d61d3458fed45c172",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_area/cam_B.png",
+      "bytes": 434793,
+      "sha256": "43a35bbe8a7112657647c2a1ad73f285a666310d2b7528e4e22bdf12c453caff",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_area/cam_C.png",
+      "bytes": 582232,
+      "sha256": "f855ffaf4899a688c26f10d99227e1421d0bf6e8969eee8ebac280dc3edb11fe",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_point/cam_A.png",
+      "bytes": 586995,
+      "sha256": "4ee66111b18a837f2be45660bc99c46150e636de56ddc234c51951e7c038c724",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_point/cam_B.png",
+      "bytes": 349406,
+      "sha256": "49c2c143fa7da731dc25629e9f9463199c3bd9823c312c5ee42ed2b633f2bae4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_point/cam_C.png",
+      "bytes": 516265,
+      "sha256": "c17cdd699e9f46edd042767896c4ad75802fa7e34b576679238c906b328a3aa6",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_sun/cam_A.png",
+      "bytes": 354980,
+      "sha256": "427a4969ae737f386414a503c1480e8719e6e7d8f5d708dedcd658a4fd10e262",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_sun/cam_B.png",
+      "bytes": 252897,
+      "sha256": "107bec256d9d54448f8f975d043964c627ad0449add8e4b64f1c81549be6870a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_sun/cam_C.png",
+      "bytes": 296869,
+      "sha256": "2fbf61f3fa1f7ced614477e5166a9c48c9d7555480c164357b71aa718fe50f58",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world/cam_A.png",
+      "bytes": 482508,
+      "sha256": "a9a4f6775cd94f97259166b480731d93d1a9437605606df5d78f9c384b892a2c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world/cam_B.png",
+      "bytes": 374649,
+      "sha256": "d718a4d86a0328d416e6b84f92934b798d951a9b241c70e1abb3fc32f9aba6c4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world/cam_C.png",
+      "bytes": 463251,
+      "sha256": "7ee448144741832d5e2154d00d91c766eeb53d921669030c5e136bfd57821d8b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world_nobump/cam_A.png",
+      "bytes": 482599,
+      "sha256": "1fbe9210d9d8a41f0d70de1d032d36f07bc8647d28e8a8cb98e308dc89847eff",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world_nobump/cam_B.png",
+      "bytes": 374861,
+      "sha256": "756496f21062035f10c204b4745c25c79678c30a461826fe2d13276c652b74cf",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/captures/direct_world_nobump/cam_C.png",
+      "bytes": 463281,
+      "sha256": "6e4b94317c560623980bcd5d8b27c817b68b2ba16f3705db3c6bd780e80f62b4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/fixture.json",
+      "bytes": 8377,
+      "sha256": "f7e703846f10a7a4ddc8101ad4f1243b1f49848e062deb2ea2f7a1213a98eeae",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/import-manifest.json",
+      "bytes": 2001,
+      "sha256": "ee86131078af039c7a93ad85a65792d6deb38b843412ac860b4427fd7c0d9720",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/mask_cam_A.png",
+      "bytes": 362851,
+      "sha256": "6a84a53e884dd5c2cc56e84c1a54d3de6b957bc2d022245c6fe51c08b408d501",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/mask_cam_B.png",
+      "bytes": 316676,
+      "sha256": "5076572db9d90ffb07c3118fcfd8d29de0045134146cfe8301242a2baa55bcec",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/mask_cam_C.png",
+      "bytes": 368866,
+      "sha256": "826c2cd49c70d414984789016089f4f8593e816049dc16ed4392f32929b10a7f",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A.png",
+      "bytes": 2249631,
+      "sha256": "c739e6bcc983141e6b2b203ae1bdfdde6939f5954bc996fb33e3c17800ea537a",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct.png",
+      "bytes": 2226833,
+      "sha256": "e14f53005c8fe0899327abc355e3ee6729a9038af0dcda59acc18ce2792c11e0",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct_area.png",
+      "bytes": 2128652,
+      "sha256": "43962209494f61c8b8d8ffff1be9503631bb13409b3d5b28a94e1ee62f18fa53",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct_point.png",
+      "bytes": 2516216,
+      "sha256": "75983905369f44dcb7bd38c6a10bed2104fd9420897dc89926f91ee5ee3b07a4",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct_sun.png",
+      "bytes": 1825549,
+      "sha256": "caa4e32a3b2de8b98a234845d88c15800417a9e5a3de890c9016ef7fb55ddda4",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct_world.png",
+      "bytes": 1671986,
+      "sha256": "aac7f92901d0d3ba694c8b4c3be56ebd9f281f9f52a90aee4d1ea375eed1d2c3",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_A_direct_world_nobump.png",
+      "bytes": 1672247,
+      "sha256": "bcf675197f7e388fc018338c8dfef0710cf4ce7fbf3d57a3c2772a37261c8023",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B.png",
+      "bytes": 1894250,
+      "sha256": "8ea3fbd76db2321a97d84347e453e28e907896d383fc631385d368af85955c1a",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct.png",
+      "bytes": 1847353,
+      "sha256": "39b41938e9f2f8245bef3f287786d3741d6c63a3c153b9c241c1ec730def048a",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct_area.png",
+      "bytes": 1495038,
+      "sha256": "bd85107d0c56925a43fa7493871a606ea0c7515ada626c27898095735aebb85d",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct_point.png",
+      "bytes": 1947301,
+      "sha256": "d8b98b1187f14a55f398b71c0ec340593915a1e7209d2f03df85a030a83c9052",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct_sun.png",
+      "bytes": 1656950,
+      "sha256": "009feffb06f86a1a5e74e54404a139d816a0c9e9c0f1a9e983181bee0a7df757",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct_world.png",
+      "bytes": 1462350,
+      "sha256": "770dd674f8886a5bec23881c3e21fbf3df962138321b627ec0aac7ee275c5050",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_B_direct_world_nobump.png",
+      "bytes": 1462503,
+      "sha256": "9b943f3170b6c2f1bbab3d2a03d2dd3d8b15e239a533154ea2b8f454ebc3c63d",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C.png",
+      "bytes": 2266070,
+      "sha256": "4fbda5185552cb2f6b947ee823dd813b1dffe601a1bdf97505e47af30a85fea6",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct.png",
+      "bytes": 2237539,
+      "sha256": "0b6f73b30715615f73f4a8bc5d1f2999d4f7635b3ead08e50fb72aafe7490ba5",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct_area.png",
+      "bytes": 2031767,
+      "sha256": "fa3f67d18bfa2ba28d5c188f18b3c96d7f0117d2316e90593b54f939c9712f09",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct_point.png",
+      "bytes": 2401977,
+      "sha256": "bf25d1ec4c7eea91e22fb905344d9d970d8c6fb9c640a0885b31321e708075c5",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct_sun.png",
+      "bytes": 1935018,
+      "sha256": "27a3803765077606d39c8460292a514bd410ecb15e50d841ad14096d7b015e56",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct_world.png",
+      "bytes": 1674676,
+      "sha256": "f2ba53ec40649c982bd3ea0a9e210ac8854a142cb05c43359e0779cc16e40e8d",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_C_direct_world_nobump.png",
+      "bytes": 1673922,
+      "sha256": "689c9fc956e0b0ccafd67a0deadf60de15eb43dcadadb260990e7893d0a0c8c4",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_D_leak.exr",
+      "bytes": 5064791,
+      "sha256": "32794fabb0621f267ef82966505c190861f801955a83fe0ecf4d20f0ee27e99d",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/ref_cam_D_leak.png",
+      "bytes": 1057453,
+      "sha256": "1941cc5a6306a792833e3cda92fe1496bae18f48e720465d19ecd7bc95facaca",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/color_0C0F14.exr",
+      "bytes": 465,
+      "sha256": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/IMAGINE_LUT_af9954966db0.png",
+      "bytes": 537,
+      "sha256": "da1315df64a61ccc31d1813a7c09bf8c86e9fc0462a2a8093bb751a09e71f1b4",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/IMAGINE_LUT_b32d905fec9a.png",
+      "bytes": 606,
+      "sha256": "bc66be6bc794cb895bf69c574f078c16b137530a4071b553cd7900779c17286f",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/noise_Crate_01_M_WoodDark_Crate_01.png",
+      "bytes": 1116138,
+      "sha256": "97cfe47d96fdee08fea3f34f1494e13fc28b3d7dc7c15200bafc3258461a494c",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/noise_Crate_02_M_WoodDark_Crate_02.png",
+      "bytes": 1115986,
+      "sha256": "c3dd91bb724197ac0aa097abc9f8635f3f35d007caa6f80fd453f4adc3dc4423",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/noise_Crate_03_M_WoodDark.png",
+      "bytes": 1116110,
+      "sha256": "b6ca14b355fc454be9930d569309c3ab9806cf2599308b3ef8d7245675f130a8",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/noise_Floor_M_FloorPlanks.png",
+      "bytes": 1116032,
+      "sha256": "7f5422f3ba7a03a59dfbba53d3de267b4b85d02bc8e909dda507a2b57c698189",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/workshop.usdc",
+      "bytes": 56072,
+      "sha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/hashes.json",
+      "bytes": 7162,
+      "sha256": "43fdf94a314646b4c583321062e602a5a589be961fab500fa40e10ed0dfe40fa",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/historical-B01.json",
+      "bytes": 14791,
+      "sha256": "5895e27e3b88de83450a33f603afa5725c5e6f0fb3e36c02d66b49e0f69208eb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/lane_a_compare.py",
+      "bytes": 9148,
+      "sha256": "3cfe8372699d6218b4190ee2e9798be578b0ef74e49bb8605bd1eab89478ea66",
+      "license": "MIT"
+    },
+    {
+      "path": "parity/provenance.json",
+      "bytes": 42503,
+      "sha256": "a6710267e55e55a0c5139f58a4ea2c689351aa15ec09ddae10c4c99baec667a3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "parity/README.md",
+      "bytes": 3613,
+      "sha256": "600f732dbdea15559babd852ce2d6d70cb23772920af1a9705c39c5ae6c628cd",
+      "license": "MIT"
+    },
+    {
+      "path": "parity/reproduce.py",
+      "bytes": 3954,
+      "sha256": "cdcc35dcf310ba0979a3780a43c41c8f697bcfdfc8db91e3db26be633a00f95b",
+      "license": "MIT"
+    },
+    {
+      "path": "parity/requirements.txt",
+      "bytes": 28,
+      "sha256": "172e9ac1e2fee27cbad9a1ac0d62b903960e8c86e287f1c8f9851def49c70afd",
+      "license": "MIT"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2428,
+      "sha256": "603fb394cb0e8e2f82ae8d87ff5f67848d47a97dc90cd7de75bdc6ac6d244396",
+      "license": "MIT"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 1398,
+      "sha256": "a4de17cc6703ceee78d5c01e9f46ee66e8a6e20a57194ea6276bb1c466b2b8de",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/test_agent.py",
+      "bytes": 6739,
+      "sha256": "f92eeeb8f80628f4102230843e19ad2e7158e3fc833d7c10a116ec33a94b5860",
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_release.py",
+      "bytes": 2542,
+      "sha256": "9e0b901b156c849f2648e2439aa4fd0abfc350df4817afca5961bfb673bb40e6",
+      "license": "MIT"
+    },
+    {
+      "path": "verify_release.py",
+      "bytes": 2577,
+      "sha256": "a643aed59c1e971d71b30f00baf7f31ebb0c411ab2899b77b664ec51fe5ef8ee",
+      "license": "MIT"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "license": "MIT"
+    }
+  ]
+}

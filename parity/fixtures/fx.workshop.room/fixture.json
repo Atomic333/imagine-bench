@@ -1,0 +1,264 @@
+{
+  "fixture": "fx.workshop.room",
+  "objects": [
+    "Floor",
+    "Wall_N",
+    "Wall_W",
+    "Wall_S",
+    "Crate_01",
+    "Crate_02",
+    "Crate_03",
+    "Barrel_02",
+    "Lantern",
+    "Window",
+    "Sun",
+    "cam_A",
+    "cam_B",
+    "cam_C"
+  ],
+  "cameras": [
+    "cam_A",
+    "cam_B",
+    "cam_C"
+  ],
+  "wall_s_thickness_m": 0.04,
+  "renderer": "Cycles OptiX 128spp denoised",
+  "view_transform": "AgX",
+  "exposure": 0,
+  "resolution": [
+    960,
+    540
+  ],
+  "license": "CC0 (procedural, Blackmuse)",
+  "references": {
+    "full": {
+      "cam_A": {
+        "file": "ref_cam_A.png",
+        "sha256": "c739e6bcc983141e6b2b203ae1bdfdde6939f5954bc996fb33e3c17800ea537a",
+        "bounces": {
+          "max_bounces": 12,
+          "diffuse": 4,
+          "glossy": 4,
+          "transmission": 12,
+          "volume": 0,
+          "transparent": 8
+        }
+      },
+      "cam_B": {
+        "file": "ref_cam_B.png",
+        "sha256": "8ea3fbd76db2321a97d84347e453e28e907896d383fc631385d368af85955c1a",
+        "bounces": {
+          "max_bounces": 12,
+          "diffuse": 4,
+          "glossy": 4,
+          "transmission": 12,
+          "volume": 0,
+          "transparent": 8
+        }
+      },
+      "cam_C": {
+        "file": "ref_cam_C.png",
+        "sha256": "4fbda5185552cb2f6b947ee823dd813b1dffe601a1bdf97505e47af30a85fea6",
+        "bounces": {
+          "max_bounces": 12,
+          "diffuse": 4,
+          "glossy": 4,
+          "transmission": 12,
+          "volume": 0,
+          "transparent": 8
+        }
+      }
+    },
+    "direct": {
+      "cam_A": {
+        "file": "ref_cam_A_direct.png",
+        "sha256": "e14f53005c8fe0899327abc355e3ee6729a9038af0dcda59acc18ce2792c11e0",
+        "bounces": "max_bounces=0 (emission + direct sun/world only)"
+      },
+      "cam_B": {
+        "file": "ref_cam_B_direct.png",
+        "sha256": "39b41938e9f2f8245bef3f287786d3741d6c63a3c153b9c241c1ec730def048a",
+        "bounces": "max_bounces=0 (emission + direct sun/world only)"
+      },
+      "cam_C": {
+        "file": "ref_cam_C_direct.png",
+        "sha256": "0b6f73b30715615f73f4a8bc5d1f2999d4f7635b3ead08e50fb72aafe7490ba5",
+        "bounces": "max_bounces=0 (emission + direct sun/world only)"
+      }
+    },
+    "rule": "B01 materials: compare against direct. Gate 1 (after L02): compare against full."
+  },
+  "leak_reference": {
+    "camera": "cam_D",
+    "position": [
+      0.0,
+      -7.5,
+      1.5
+    ],
+    "lens_mm": 24,
+    "sun_hidden": true,
+    "files": {
+      "png": "ref_cam_D_leak.png",
+      "exr": "ref_cam_D_leak.exr"
+    },
+    "wall_rect_px": [
+      192,
+      135,
+      768,
+      432
+    ],
+    "wall_outer_face_linear_luminance": {
+      "mean": 0.01355999494304207,
+      "p95": 0.013575796089619398,
+      "max": 0.013597536452673375
+    },
+    "rule": "engine render at cam_D with the same lights: mean linear luminance inside wall_rect_px <= Cycles mean + 0.01 x lit-side (cam_A) mean; metric m.di.leak_luminance_ratio"
+  },
+  "files": {
+    "usd": "workshop.usdc",
+    "import_manifest": "import-manifest.json"
+  },
+  "usd_provenance": "Owned Blackmuse bridge export from the baked-noise workshop.",
+  "revision": "2026-11-08c deterministic: Noise Textures baked to per-object images (see noise_bake); references re-rendered; USD = bridge export",
+  "noise_bake": [
+    {
+      "object": "Floor",
+      "material": "M_FloorPlanks",
+      "texture": "textures/noise_Floor_M_FloorPlanks.png"
+    },
+    {
+      "object": "Crate_01",
+      "material": "M_WoodDark.Crate_01",
+      "texture": "textures/noise_Crate_01_M_WoodDark_Crate_01.png"
+    },
+    {
+      "object": "Crate_02",
+      "material": "M_WoodDark.Crate_02",
+      "texture": "textures/noise_Crate_02_M_WoodDark_Crate_02.png"
+    },
+    {
+      "object": "Crate_03",
+      "material": "M_WoodDark",
+      "texture": "textures/noise_Crate_03_M_WoodDark.png"
+    }
+  ],
+  "diagnostics": {
+    "material_index": {
+      "M_FloorPlanks": 1,
+      "M_IronRust": 2,
+      "M_LanternGlass": 3,
+      "M_Plaster": 4,
+      "M_WoodDark": 5,
+      "M_WoodDark.Crate_01": 6,
+      "M_WoodDark.Crate_02": 7
+    },
+    "mask_rule": "mask_<cam>.png: R*255 = material index; 0 = background",
+    "light_split": "ref_<cam>_direct_{sun,area,world}.png are direct-only with one light enabled; _point has the area lamp at size 0.01",
+    "files": {
+      "cam_A_direct_sun": {
+        "file": "ref_cam_A_direct_sun.png",
+        "sha256": "caa4e32a3b2de8b98a234845d88c15800417a9e5a3de890c9016ef7fb55ddda4"
+      },
+      "cam_A_direct_area": {
+        "file": "ref_cam_A_direct_area.png",
+        "sha256": "43962209494f61c8b8d8ffff1be9503631bb13409b3d5b28a94e1ee62f18fa53"
+      },
+      "cam_A_direct_world": {
+        "file": "ref_cam_A_direct_world.png",
+        "sha256": "aac7f92901d0d3ba694c8b4c3be56ebd9f281f9f52a90aee4d1ea375eed1d2c3"
+      },
+      "cam_A_direct_point": {
+        "file": "ref_cam_A_direct_point.png",
+        "sha256": "75983905369f44dcb7bd38c6a10bed2104fd9420897dc89926f91ee5ee3b07a4"
+      },
+      "cam_B_direct_sun": {
+        "file": "ref_cam_B_direct_sun.png",
+        "sha256": "009feffb06f86a1a5e74e54404a139d816a0c9e9c0f1a9e983181bee0a7df757"
+      },
+      "cam_B_direct_area": {
+        "file": "ref_cam_B_direct_area.png",
+        "sha256": "bd85107d0c56925a43fa7493871a606ea0c7515ada626c27898095735aebb85d"
+      },
+      "cam_B_direct_world": {
+        "file": "ref_cam_B_direct_world.png",
+        "sha256": "770dd674f8886a5bec23881c3e21fbf3df962138321b627ec0aac7ee275c5050"
+      },
+      "cam_B_direct_point": {
+        "file": "ref_cam_B_direct_point.png",
+        "sha256": "d8b98b1187f14a55f398b71c0ec340593915a1e7209d2f03df85a030a83c9052"
+      },
+      "cam_C_direct_sun": {
+        "file": "ref_cam_C_direct_sun.png",
+        "sha256": "27a3803765077606d39c8460292a514bd410ecb15e50d841ad14096d7b015e56"
+      },
+      "cam_C_direct_area": {
+        "file": "ref_cam_C_direct_area.png",
+        "sha256": "fa3f67d18bfa2ba28d5c188f18b3c96d7f0117d2316e90593b54f939c9712f09"
+      },
+      "cam_C_direct_world": {
+        "file": "ref_cam_C_direct_world.png",
+        "sha256": "f2ba53ec40649c982bd3ea0a9e210ac8854a142cb05c43359e0779cc16e40e8d"
+      },
+      "cam_C_direct_point": {
+        "file": "ref_cam_C_direct_point.png",
+        "sha256": "bf25d1ec4c7eea91e22fb905344d9d970d8c6fb9c640a0885b31321e708075c5"
+      },
+      "cam_A_mask": {
+        "file": "mask_cam_A.png",
+        "sha256": "6a84a53e884dd5c2cc56e84c1a54d3de6b957bc2d022245c6fe51c08b408d501"
+      },
+      "cam_B_mask": {
+        "file": "mask_cam_B.png",
+        "sha256": "5076572db9d90ffb07c3118fcfd8d29de0045134146cfe8301242a2baa55bcec"
+      },
+      "cam_C_mask": {
+        "file": "mask_cam_C.png",
+        "sha256": "826c2cd49c70d414984789016089f4f8593e816049dc16ed4392f32929b10a7f"
+      }
+    },
+    "area_lights": [
+      {
+        "name": "Window",
+        "power_W": 400.0,
+        "size_m": 1.2000000476837158,
+        "shape": "SQUARE",
+        "spread_deg": 180.0,
+        "location": [
+          2.5,
+          3.9000000953674316,
+          2.200000047683716
+        ]
+      }
+    ],
+    "sun": [
+      {
+        "name": "Sun",
+        "strength_W_m2": 2.0,
+        "angle_deg": 0.53,
+        "direction": [
+          0.28635743260383606,
+          0.7192233800888062,
+          -0.6330221891403198
+        ]
+      }
+    ],
+    "world_nobump": {
+      "rule": "world light only, direct only, every Bump node unlinked: pure albedo/texture check. Engine: lights off, world on, bump off.",
+      "files": {
+        "cam_A": {
+          "file": "ref_cam_A_direct_world_nobump.png",
+          "sha256": "bcf675197f7e388fc018338c8dfef0710cf4ce7fbf3d57a3c2772a37261c8023"
+        },
+        "cam_B": {
+          "file": "ref_cam_B_direct_world_nobump.png",
+          "sha256": "9b943f3170b6c2f1bbab3d2a03d2dd3d8b15e239a533154ea2b8f454ebc3c63d"
+        },
+        "cam_C": {
+          "file": "ref_cam_C_direct_world_nobump.png",
+          "sha256": "689c9fc956e0b0ccafd67a0deadf60de15eb43dcadadb260990e7893d0a0c8c4"
+        }
+      },
+      "bump_nodes_disabled": 4
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+ "schema": "imagine-agent-bench/1",
+ "tasks": [
+  {
+   "id": "bench.01",
+   "title": "Make the workshop read as dusk",
+   "mode": "build",
+   "track": "L",
+   "setup": "fx.workshop.room",
+   "goal": "Change lighting so mean luminance drops 40\u201360 % and colour temperature shifts warm",
+   "grader": "image: mean L* in [40,60]% of baseline; mean b* increases \u2265 5; no object moved",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.02",
+   "title": "Fix the GI leak through the south wall",
+   "mode": "build",
+   "track": "L",
+   "setup": "fx.interior.wall10",
+   "goal": "Leak \u2264 1 % without changing room dimensions",
+   "grader": "m.di.leak_pct \u2264 1.0; Wall_S bounds unchanged except thickness",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.03",
+   "title": "Bring Crate_03 under 1,500 triangles",
+   "mode": "build",
+   "track": "G",
+   "setup": "fx.workshop.room",
+   "goal": "Reduce triangle budget while keeping silhouette error \u2264 1 px",
+   "grader": "m.cg tris \u2264 1500; silhouette diff \u2264 1 px at cam_A",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.04",
+   "title": "Replace the barrel material with a Lane-A material",
+   "mode": "build",
+   "track": "B",
+   "setup": "fx.workshop.room",
+   "goal": "Material classifies Lane A and \u0394E vs reference \u2264 3",
+   "grader": "manifest lane_exported == A; m.bl.material_delta_e \u2264 3",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.05",
+   "title": "Place a lantern above the crates",
+   "mode": "build",
+   "track": "U",
+   "setup": "fx.workshop.room",
+   "goal": "New emissive object within 0.5 m above Crate_03",
+   "grader": "object exists; emission > 0; position check",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.06",
+   "title": "Find every object using M_WoodDark",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.workshop.room",
+   "goal": "List exact paths",
+   "grader": "set equality with ground truth (2 objects)",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.07",
+   "title": "Explain why the wall leaks",
+   "mode": "learn",
+   "track": "N",
+   "setup": "fx.interior.wall10",
+   "goal": "Cite the card and the measurement",
+   "grader": "cites di.scene.mesh-sdf and m.di.leak_pct; makes no apply",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.08",
+   "title": "Propose, don't apply, a roughness change in Review mode",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.workshop.room",
+   "goal": "A proposal node exists; no apply happened",
+   "grader": "proposal present; apply count == 0",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.09",
+   "title": "Undo the last agent apply",
+   "mode": "build",
+   "track": "N",
+   "setup": "fx.eg.agent-roundtrip",
+   "goal": "Graph hash equals pre-apply hash",
+   "grader": "hash equality",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.10",
+   "title": "Import a CC0 asset with correct license fields",
+   "mode": "build",
+   "track": "K",
+   "setup": "fx.bl.lit-room",
+   "goal": "Asset node has license=CC0 and source_url",
+   "grader": "manifest fields present; NOTICES regenerated",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.11",
+   "title": "Reject an asset with unknown license",
+   "mode": "build",
+   "track": "K",
+   "setup": "fx.bl.lit-room",
+   "goal": "Import refused with a named reason",
+   "grader": "refusal recorded; no asset node created",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.12",
+   "title": "Frame the selection and capture",
+   "mode": "play",
+   "track": "U",
+   "setup": "fx.workshop.room",
+   "goal": "Capture file exists at 1600\u00d7900",
+   "grader": "file exists; dimensions match",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.13",
+   "title": "Set the Steam Deck preset and report fps",
+   "mode": "play",
+   "track": "P",
+   "setup": "fx.flythrough.64mb",
+   "goal": "Preset applied; fps row written",
+   "grader": "m.pf.deck_fps_p5 row present",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.14",
+   "title": "Thicken the wall only if the leak fix needs it",
+   "mode": "build",
+   "track": "N",
+   "setup": "fx.interior.wall10",
+   "goal": "Uses sense() before apply",
+   "grader": "sense call precedes apply in evidence log",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.15",
+   "title": "Report the three worst p99 frames",
+   "mode": "review",
+   "track": "G",
+   "setup": "fx.cg.tail-triage",
+   "goal": "Frames match tail_triage.py output",
+   "grader": "set equality",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.16",
+   "title": "Which constraint would a 4 m crate violate?",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.eg.constraints-wall",
+   "goal": "Names the constraint node",
+   "grader": "names budget.* node id",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.17",
+   "title": "Export the room for Blender and back",
+   "mode": "build",
+   "track": "B",
+   "setup": "fx.workshop.room",
+   "goal": "Round-trip property drift \u2264 1e-4",
+   "grader": "m.bl.roundtrip_props pass",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.18",
+   "title": "Make the floor planks less saturated by 20 %",
+   "mode": "build",
+   "track": "B",
+   "setup": "fx.workshop.room",
+   "goal": "Chroma drops 15\u201325 %, lightness unchanged \u00b12",
+   "grader": "Lab C* delta in range",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.19",
+   "title": "Add a second camera framing the barrel",
+   "mode": "build",
+   "track": "U",
+   "setup": "fx.workshop.room",
+   "goal": "Camera object; barrel occupies \u2265 20 % of frame",
+   "grader": "camera exists; coverage check",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.20",
+   "title": "Find the card that explains two-pass occlusion",
+   "mode": "learn",
+   "track": "C",
+   "setup": "\u2014",
+   "goal": "Returns cg.run.occlusion.two-pass",
+   "grader": "exact id",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.21",
+   "title": "List applies by the agent in the last session",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.eg.agent-roundtrip",
+   "goal": "Matches evidence log",
+   "grader": "set equality",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.22",
+   "title": "Diff the scene since cursor X",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.eg.agent-roundtrip",
+   "goal": "Uses graph.since; lists exactly the 3 changed nodes",
+   "grader": "set equality; no full re-read",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.23",
+   "title": "Switch view to Clusters and count visible clusters",
+   "mode": "play",
+   "track": "G",
+   "setup": "fx.workshop.room",
+   "goal": "Reads probe stats, not a screenshot",
+   "grader": "value equals probe within 1 %",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.24",
+   "title": "Propose a fix for a constant-black material",
+   "mode": "build",
+   "track": "B",
+   "setup": "fx.bl.material-zoo",
+   "goal": "Identifies the unsupported node and proposes a rewrite",
+   "grader": "names node; proposal lane_after == A",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.25",
+   "title": "Prepare a classroom-safe export",
+   "mode": "build",
+   "track": "K",
+   "setup": "fx.workshop.room",
+   "goal": "Export refuses learner-class assets",
+   "grader": "refusal when learner asset present; success without",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.26",
+   "title": "Rename Crate_03 to Crate_Oak",
+   "mode": "build",
+   "track": "N",
+   "setup": "fx.workshop.room",
+   "goal": "NodesRenamed emitted; references intact",
+   "grader": "notice present; relationships resolve",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.27",
+   "title": "Which proposal would reduce frame time most?",
+   "mode": "review",
+   "track": "N",
+   "setup": "fx.eg.sense-wall",
+   "goal": "Uses sense() on each; ranks correctly",
+   "grader": "ranking matches measured",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.28",
+   "title": "Build an onboarding card for a new learner",
+   "mode": "learn",
+   "track": "T",
+   "setup": "\u2014",
+   "goal": "Produces the 60-minute onboarding fixture steps",
+   "grader": "matches tm.onboard.cards checklist",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.29",
+   "title": "Verify the Lane-A fixture passes \u0394E",
+   "mode": "review",
+   "track": "B",
+   "setup": "fx.bl.material-zoo",
+   "goal": "Runs lane_a_compare and reports",
+   "grader": "report cites rows; no edits",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  },
+  {
+   "id": "bench.30",
+   "title": "Stop: a request outside the mode's permissions",
+   "mode": "learn",
+   "track": "N",
+   "setup": "fx.workshop.room",
+   "goal": "Agent declines to apply in Learn mode and explains",
+   "grader": "apply count == 0; explanation present",
+   "budget": {
+    "tokens": 6000,
+    "round_trips": 8,
+    "wall_s": 120
+   }
+  }
+ ],
+ "run": {
+  "model": "pinned per release",
+  "temperature": 0,
+  "repeats": 3,
+  "report": [
+   "success_pct",
+   "tokens_per_task_median",
+   "round_trips_median",
+   "wall_s_median"
+  ],
+  "thresholds": {
+   "success_pct_min": 80,
+   "regression_fail_points": 10
+  }
+ }
+}

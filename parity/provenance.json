@@ -1,0 +1,965 @@
+{
+  "fixture": "fx.workshop.room",
+  "sourceRights": {
+    "document": "original fixture.json",
+    "declaration": "CC0 (procedural, Blackmuse)",
+    "documentSha256": "9bfc175b2e1171ad3de25cbc337b62a1d33c51511e1370af423a9de873f24850",
+    "independentAdmissionRecord": {
+      "license": "CC0-1.0",
+      "rightsEvidence": "fixture.json",
+      "rightsEvidenceSha256": "9bfc175b2e1171ad3de25cbc337b62a1d33c51511e1370af423a9de873f24850"
+    },
+    "generator": {
+      "name": "build_lane_a_fixtures.py",
+      "sha256": "010aaddc8a399205e655fc9f14fe8442f90b878681717c27c835707d5fe4e15c",
+      "statement": "The source generator identifies the fixture as procedural, includes no external assets and declares CC0."
+    }
+  },
+  "historicalRun": {
+    "receiptSha256": "e914d905d46c01d08c32e24f5473aa375249997f8004ead6762c18570dc2a477",
+    "capturesArchiveSha256": "6ddab2b1dbeddd49bfe466c6ca038a273349bbe6f0f50df60065bc0d86257e00",
+    "sourceStageSha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+    "referenceAndCandidatePixelPairsVerified": 51,
+    "verification": "OpenImageIO decoded every channel at the source native sample precision before and after metadata removal. Pixel digests are over the native little-endian array bytes in file row order."
+  },
+  "olderHashList": {
+    "sourceName": "fixture-hashes-2026-11-08.json",
+    "sourceSha256": "2c4ce72c3d25833cf22fd408c24f819c9873620fd33d2cfc58ada28e41fcdb2f",
+    "olderFixtureJsonPin": "7553757cc3dfc5ed7605c5f071acd4e56ad0440319807ea6c7a68d041b24a046",
+    "actualScoredFixtureJsonPin": "9bfc175b2e1171ad3de25cbc337b62a1d33c51511e1370af423a9de873f24850",
+    "reason": "The older list predates the last light-split fixture descriptor. Public fixture and asset hashes use the supplied release manifest."
+  },
+  "blend": {
+    "distributed": false,
+    "observedSourceSha256": "38ce206d4f4a8741d6c62afdbb17896984190377faae2e5cd708e16895829efc",
+    "exporterDeclaredSourceSha256": "eb478b27572e961500dff3b77391bbe1a07658687e768ecf2fa6cdab83b94fb7",
+    "reason": "The authoring file and trial saves retained private host metadata. The published USD and all authored textures are present. The retained image scoring workflow is independently runnable; regeneration of the original Blender authoring state is outside this dataset."
+  },
+  "scope": {
+    "originalFixtureData": "CC0-1.0",
+    "derivedCompilationAndCaptureSet": "CC-BY-4.0",
+    "comparatorAndReplayCode": "MIT",
+    "referenceRenderer": "Blender Cycles",
+    "externalAssetsDeclared": false,
+    "engineCodeIncluded": false,
+    "learnerDataIncluded": false
+  },
+  "artifacts": {
+    "lane_a_compare.py": {
+      "source": "Blackmuse comparison tool",
+      "sourceSha256": "3cfe8372699d6218b4190ee2e9798be578b0ef74e49bb8605bd1eab89478ea66",
+      "publicSha256": "3cfe8372699d6218b4190ee2e9798be578b0ef74e49bb8605bd1eab89478ea66",
+      "treatment": "unchanged"
+    },
+    "fixtures/fx.workshop.room/ref_cam_A.png": {
+      "source": "fx.workshop.room/ref_cam_A.png",
+      "sourceSha256": "647381e4873c2aaf160f95079fd4666a7cde69e805c38fbed18c1638714c5f8d",
+      "publicSha256": "c739e6bcc983141e6b2b203ae1bdfdde6939f5954bc996fb33e3c17800ea537a",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "08263e96eb8b6af5727be2c0e5a4c1f7fd7f86527419f476d8f1acf73bfe2df0",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "e2bc3d36c695f27c35bbdca7f1328735e2cfb8a7462493b8a773305a1dc47d61"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct.png",
+      "sourceSha256": "c60c89b19f83c8c4feb4cd6a501f3f27c54d9f9b6cfb7a126f5b472ad9fdf8aa",
+      "publicSha256": "e14f53005c8fe0899327abc355e3ee6729a9038af0dcda59acc18ce2792c11e0",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "9c80b65c92e447f36154df6c0a7694acec9225dcd9169fa14fdc34bc6795f190",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "fff970b884b1317867af9074eddbdf4f4074524d1b045d9fc17beae0ca55e7c8"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct_area.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct_area.png",
+      "sourceSha256": "751e7cb17ca3f50c2825c8fa7dd69c029d2f7163a6470531b58525f17888ed8e",
+      "publicSha256": "43962209494f61c8b8d8ffff1be9503631bb13409b3d5b28a94e1ee62f18fa53",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "d1856c995fa08fd2fed656e3d74822ac7471b5c8206eba4a5dc03ac57754edb6",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "4b615f9bd625133101d0e6b4309b3918c2cd9c036b22f1ecc41a79eb9049a5b7"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct_point.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct_point.png",
+      "sourceSha256": "ee2470a7d15a3bd0c7bca5359a66f679525f9795cebc7b72742f79fe288e03ec",
+      "publicSha256": "75983905369f44dcb7bd38c6a10bed2104fd9420897dc89926f91ee5ee3b07a4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "9efa8a73c0b545cfa51e27dd1e601050f1129e617933a60c20a6ef0b087a93e7",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "03273122d6e85c19a726b28ddea0ced99759a532794ea10a1d31a3fc60af2574"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct_sun.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct_sun.png",
+      "sourceSha256": "36a00567c8842eddac561164b40a35bbdd590d5924ff7094563a8d68fef6b3fd",
+      "publicSha256": "caa4e32a3b2de8b98a234845d88c15800417a9e5a3de890c9016ef7fb55ddda4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "0dd11724f9ccaf537bda2dfe2aed254557943f4075adbbc3061a175b79cbc158",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "f46413816a7abd89e3deaf4b3edf3ea955b0825b06e42b41f3c2f7fe034ec272"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct_world.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct_world.png",
+      "sourceSha256": "b38341889e94f83b926643eefebe583f24596283b3ef5dfb2f4430df1a3d2e26",
+      "publicSha256": "aac7f92901d0d3ba694c8b4c3be56ebd9f281f9f52a90aee4d1ea375eed1d2c3",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "bad358901e1e6e8ace41fae18743bedf67c4edc716efe323dc78c6a2de786336",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "0353944c415fdd0781ca97937b9fba5cead8e182045f870125ead39138b38717"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_A_direct_world_nobump.png": {
+      "source": "fx.workshop.room/ref_cam_A_direct_world_nobump.png",
+      "sourceSha256": "afb45899cf36b7dda5c44c0a6537636c5b1c3f76b0fc4b3cc7363d06977f7e34",
+      "publicSha256": "bcf675197f7e388fc018338c8dfef0710cf4ce7fbf3d57a3c2772a37261c8023",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "dfbe0fa1d33ab1d58da8bd332e66c4cd50d50524fa5c1276e28fc7b0c718a103",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "52e86929ade3612f95403e932dcd7dc494a1de1d3807fd62f1ef24cfadc7a447"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B.png": {
+      "source": "fx.workshop.room/ref_cam_B.png",
+      "sourceSha256": "69b90453096ba06d5fbf9ae298535d50b57b0cb8b002541fcb5c44069be0100b",
+      "publicSha256": "8ea3fbd76db2321a97d84347e453e28e907896d383fc631385d368af85955c1a",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "5eb7df47fd4d4bc1af0599cda2dc19ae11ae7583a3fb939800f9708e964db117",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "5ce4dca7bf9b2b2917f569bf42f520bce0a5a15f916c60277bd9925bd228f231"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct.png",
+      "sourceSha256": "0d87d66e191fb42bd51b078186c5105a9be3da45ddb6c6b99484a96b69a7a1dc",
+      "publicSha256": "39b41938e9f2f8245bef3f287786d3741d6c63a3c153b9c241c1ec730def048a",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "28714a4d5a59077dc4c20e09e15128740705bf8a631be647f1dab633f38a1ac8",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "7ff0c23cde25ceb8822a77f5ef8383a282d0ec0e99433256bd4762181fa12caa"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct_area.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct_area.png",
+      "sourceSha256": "5daea70b0e0b09ff2429988ab4021aecd2ee508cca37abd0cc52c4bfc6ec7293",
+      "publicSha256": "bd85107d0c56925a43fa7493871a606ea0c7515ada626c27898095735aebb85d",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "7bcd36ff92c8ae65069071165a8cf670fae3a3291a99449a0c4c1fea7a8b6c1a",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "537e38340b22476f1d5360e68897f0d507f4aa9211de45976589668fc1fc611c"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct_point.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct_point.png",
+      "sourceSha256": "5572872b66bae3443a9639c06f4bbbae8dd5564367d8aae15661a6ef6d27e4e7",
+      "publicSha256": "d8b98b1187f14a55f398b71c0ec340593915a1e7209d2f03df85a030a83c9052",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "f1382a39ce7828433152ba0d853a2dca2f95af34c2a209d203624f7545a4aac3",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "3cd4a95e689b197cce01a37bfa962e116f5fdeea74271c5884bde7bb333d3736"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct_sun.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct_sun.png",
+      "sourceSha256": "6e1e9ccde6f13691dbd013d8d56b438b33f0d0cc5dc54c80ebf9c27177c8b400",
+      "publicSha256": "009feffb06f86a1a5e74e54404a139d816a0c9e9c0f1a9e983181bee0a7df757",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "359686853f6d008bb360dd036731e57753fab206f145b3cd19033d64266fcb4d",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "c003d0eb95ae3d4a962d66b83bee0268bbc3597d13616d6078356d426e1a4b5a"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct_world.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct_world.png",
+      "sourceSha256": "59dbb037421f7a831e0683ad90d49858bb27514591f0c9374f748197dcd9e37d",
+      "publicSha256": "770dd674f8886a5bec23881c3e21fbf3df962138321b627ec0aac7ee275c5050",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "74a2af998d09f3abe7ce9a72499a833167ce8261b7ba59c834e43d91bdd9a24a",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "5d01576e457dfde98ee66a973b5a2bd7a2d17dc5dbaa63ace667a95bcd91b04a"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_B_direct_world_nobump.png": {
+      "source": "fx.workshop.room/ref_cam_B_direct_world_nobump.png",
+      "sourceSha256": "6a7efbbbe1dfd52daa7f86fcb94df438237c4acd49362cbb4989e5a1f371aeaf",
+      "publicSha256": "9b943f3170b6c2f1bbab3d2a03d2dd3d8b15e239a533154ea2b8f454ebc3c63d",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "9998c51037d75a1eb180742ca3cc0a18d9b35c09e2a31c594d696c43aab4ea1b",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "92bace6b8efe22e49dc8db7026e74f99148e43a50a6dd93343234b146b383426"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C.png": {
+      "source": "fx.workshop.room/ref_cam_C.png",
+      "sourceSha256": "83b170fb53046c1252ad91fe624cc60bf880d374e373ba46835bbed540b938d3",
+      "publicSha256": "4fbda5185552cb2f6b947ee823dd813b1dffe601a1bdf97505e47af30a85fea6",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "1e99f1948a8cdbe11516ce1ca5cda86623ebb72ef6235a4740f8c0a19b669147",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "4a28fac1cf1fa48fdea5218b90f22545922154f6e0257e6900a30c7b0c96e419"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct.png",
+      "sourceSha256": "536483b8b2db9692c419eb43bfb837e468cf76f432c5e3cf7c7dd0f3f82184aa",
+      "publicSha256": "0b6f73b30715615f73f4a8bc5d1f2999d4f7635b3ead08e50fb72aafe7490ba5",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "c76672ae564f7a94cdfc503bcaa95942203282953592181639f851138b1f7b38",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "5b2e8ab9f5d812a845b863ed5e305019e0a722c8559c0b145dc4d5cc61cd12b0"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct_area.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct_area.png",
+      "sourceSha256": "4f130921b04921dc2bab813ec51ed908c2795d2e242f7531c66a92a126cf2e12",
+      "publicSha256": "fa3f67d18bfa2ba28d5c188f18b3c96d7f0117d2316e90593b54f939c9712f09",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "646f562721e30bed1244652ea4a87bf3d0e3479f14bc9c24d380dbeaf2350b65",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "89f84d2a1d4956e3d58a95c764bf1314894cd667a7e2ad4018e6f06d884db752"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct_point.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct_point.png",
+      "sourceSha256": "e24bcc9e7d39cb3b6eb2dd4c36519ff793e82b4e122405e3335ccbc4dd65021b",
+      "publicSha256": "bf25d1ec4c7eea91e22fb905344d9d970d8c6fb9c640a0885b31321e708075c5",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "0e29ee0e5214377f1994295d5d0248f85ced7ec4c790c7da9325e32fee7d1ae7",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "51c5841d602dfb12269255f93b020828472c478c92b5fae0f31ee067f87c0787"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct_sun.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct_sun.png",
+      "sourceSha256": "62fb963ff49252f6ece437431e29c39498d4973adeaec1a25de922f5250b877a",
+      "publicSha256": "27a3803765077606d39c8460292a514bd410ecb15e50d841ad14096d7b015e56",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "fd7285c563761da2b22c81233c2c14cf88f10711548e7c5eb95188e67cb4defb",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "6db1b0f4afef96baeeb20651d51409ec2b4703a063dcbdc3024fc873c4c48011"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct_world.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct_world.png",
+      "sourceSha256": "6e2fb54bf345573f765c4d85691b4e60a36fff2e97e4d4ac486a964182cf6168",
+      "publicSha256": "f2ba53ec40649c982bd3ea0a9e210ac8854a142cb05c43359e0779cc16e40e8d",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "b72e86c1fa2a97fe980edd5fdb2c97a6400d0005a91e03bbb1cfd55e8a95287c",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "cda0558cf52157d33fa0492696029608158680015fb2cc2fe6fa41c427c5af5b"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_C_direct_world_nobump.png": {
+      "source": "fx.workshop.room/ref_cam_C_direct_world_nobump.png",
+      "sourceSha256": "ece66b78fb68f161badab843ca2dd1917e417b7a9b8adff02d28aaefc399c23f",
+      "publicSha256": "689c9fc956e0b0ccafd67a0deadf60de15eb43dcadadb260990e7893d0a0c8c4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "6589a3e384fce089ae5b62a45de1d22e01422ae0f768c2f7587c0ed6e7bccf9d",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "4ec2b033ad013a605a135042823f1a95f63a6c8893f9cb33210f27231f2abb7d"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_D_leak.png": {
+      "source": "fx.workshop.room/ref_cam_D_leak.png",
+      "sourceSha256": "1d0e61ff7516555e7d059fce6b619e1f3ceb6a6664c6c41ead91e0e608f03c19",
+      "publicSha256": "1941cc5a6306a792833e3cda92fe1496bae18f48e720465d19ecd7bc95facaca",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "6329045db3c9ad864d0a42a16938a48c311ff3910aa552bff23fdb60647f5f88",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "bf4cfe720e89aaebdaeb935b34b40d0ddc620b84bee1b30384baeb2d520d5f12"
+      }
+    },
+    "fixtures/fx.workshop.room/mask_cam_A.png": {
+      "source": "fx.workshop.room/mask_cam_A.png",
+      "sourceSha256": "3ca2bf91a56efe2353f6d81218ae43c9114fa20bc9a662476b578e1f8252e657",
+      "publicSha256": "6a84a53e884dd5c2cc56e84c1a54d3de6b957bc2d022245c6fe51c08b408d501",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "2a57ddd56d10645dcf7f04cdb6becf70464b7f4112988c8732fd852b30e00739",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint8",
+        "sha256": "4be1109baa5f6a94cfbda7e562df9221583b926059b60e0d58d0027f858a10ad"
+      }
+    },
+    "fixtures/fx.workshop.room/mask_cam_B.png": {
+      "source": "fx.workshop.room/mask_cam_B.png",
+      "sourceSha256": "9a637c16df53ca09f070e83bb0a250f2c7f1ab311f2a62af3702a0f26c07a28d",
+      "publicSha256": "5076572db9d90ffb07c3118fcfd8d29de0045134146cfe8301242a2baa55bcec",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "fcfe9f1fe04dc10a2c44abcb0ab816e3d3bda06f579297932f7365cfb6ad07b7",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint8",
+        "sha256": "624249b3c21516daa06946d6139135d34d2a8044b92a108cecf2597de70fe810"
+      }
+    },
+    "fixtures/fx.workshop.room/mask_cam_C.png": {
+      "source": "fx.workshop.room/mask_cam_C.png",
+      "sourceSha256": "9a2ff0adcddb3c93c0d8b427fa8d8814bba2db52cad483bac157d0effab0456f",
+      "publicSha256": "826c2cd49c70d414984789016089f4f8593e816049dc16ed4392f32929b10a7f",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf",
+        "tEXt"
+      ],
+      "uncompressedScanlineSha256": "7579634d4be973d745b593ca1ba3e60872f04f18362bef18c0a85decf5f57454",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "uint8",
+        "sha256": "3c7f61d7e904a77ef7dadc77e7c825b2c32d0a46e4819227532862b926e6898f"
+      }
+    },
+    "fixtures/fx.workshop.room/ref_cam_D_leak.exr": {
+      "source": "fx.workshop.room/ref_cam_D_leak.exr",
+      "sourceSha256": "ede7dbff1c2d28a350f9a3dc47e19464cadad722c4b233b4fc5ab0a8ed20f66d",
+      "publicSha256": "32794fabb0621f267ef82966505c190861f801955a83fe0ecf4d20f0ee27e99d",
+      "treatment": "EXR metadata removed",
+      "removedAttributes": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time"
+      ],
+      "compressedPixelBlocksSha256": "d9cc58216f8add592200015d809ee497e8623f99ac2d5a7b3aa8ee614b24cef9",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 4,
+        "nativeSampleType": "float",
+        "sha256": "a2d751ebc2d98173f4a5c299026e6f325256d1f18f29e0b0eed4efcd5c29030f"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/IMAGINE_LUT_af9954966db0.png": {
+      "source": "fx.workshop.room/textures/IMAGINE_LUT_af9954966db0.png",
+      "sourceSha256": "f00b244d1ca45ffd77af3b4a9f21dc0a7df1c22363f73305eae4024714cb3943",
+      "publicSha256": "da1315df64a61ccc31d1813a7c09bf8c86e9fc0462a2a8093bb751a09e71f1b4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "7e24455fcd99ec3d1c3e75534f5bdc3d87148d31630aded940d8d1999de341a3",
+      "decodedNativeSamples": {
+        "width": 256,
+        "height": 1,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "d19f29ee847ad3d8285f75750de68cb0baa846bdac40ab5a9bb289da8032235d"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/IMAGINE_LUT_b32d905fec9a.png": {
+      "source": "fx.workshop.room/textures/IMAGINE_LUT_b32d905fec9a.png",
+      "sourceSha256": "572c79d07f17be7a62cb8d908acf5347a8825aa193a6ba632736166bb3db9280",
+      "publicSha256": "bc66be6bc794cb895bf69c574f078c16b137530a4071b553cd7900779c17286f",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "6337a446d73460bcf923dbb79c2f2921cc752c876b760c86dbbf582b2a17b961",
+      "decodedNativeSamples": {
+        "width": 256,
+        "height": 1,
+        "channels": 4,
+        "nativeSampleType": "uint16",
+        "sha256": "c9f2774a311e436f812adf1d177c1bcb38e9788579025ed337994984fdc8de71"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/color_0C0F14.exr": {
+      "source": "fx.workshop.room/textures/color_0C0F14.exr",
+      "sourceSha256": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
+      "publicSha256": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
+      "treatment": "EXR metadata removed",
+      "removedAttributes": [],
+      "decodedNativeSamples": {
+        "width": 1,
+        "height": 1,
+        "channels": 4,
+        "nativeSampleType": "float",
+        "sha256": "b7e676808ecd369151959347106cb429b392506569ab124bd085653679d1ccad"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/noise_Crate_01_M_WoodDark_Crate_01.png": {
+      "source": "fx.workshop.room/textures/noise_Crate_01_M_WoodDark_Crate_01.png",
+      "sourceSha256": "2d2a179641176a70e2390fad97b1f74bd068d325829958fd6ed6dc8b077ce15b",
+      "publicSha256": "97cfe47d96fdee08fea3f34f1494e13fc28b3d7dc7c15200bafc3258461a494c",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "7075cf6c1d71ffaf7debd84f0771d813433bb7263de9f99e2f03a07bfadcda81",
+      "decodedNativeSamples": {
+        "width": 1024,
+        "height": 1024,
+        "channels": 3,
+        "nativeSampleType": "uint16",
+        "sha256": "bb911901be2681a5b4e012a751ed0acb6c0ca0939fdf25e85538487655fbe645"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/noise_Crate_02_M_WoodDark_Crate_02.png": {
+      "source": "fx.workshop.room/textures/noise_Crate_02_M_WoodDark_Crate_02.png",
+      "sourceSha256": "186bfd95adcdadce4abfeaefd95fe037e6e243a111aa89ad6e06784dd7aee5d7",
+      "publicSha256": "c3dd91bb724197ac0aa097abc9f8635f3f35d007caa6f80fd453f4adc3dc4423",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "a9e3d5c90833455f18a2d81f1adb6490c39a048794c16ac7e79a7caa2be3d633",
+      "decodedNativeSamples": {
+        "width": 1024,
+        "height": 1024,
+        "channels": 3,
+        "nativeSampleType": "uint16",
+        "sha256": "8c4a5938d225cdb462c1483dcf42b6be1fc59ae5174a1db2d006e0b981f57617"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/noise_Crate_03_M_WoodDark.png": {
+      "source": "fx.workshop.room/textures/noise_Crate_03_M_WoodDark.png",
+      "sourceSha256": "e7c38703b1df046ea0aba38b4435a242ed58603521f3ab38feb3b393a2337763",
+      "publicSha256": "b6ca14b355fc454be9930d569309c3ab9806cf2599308b3ef8d7245675f130a8",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "8c01abeb1ed73f6e8441c5b780aa0e41844d3037d9396a88e508bc424325f916",
+      "decodedNativeSamples": {
+        "width": 1024,
+        "height": 1024,
+        "channels": 3,
+        "nativeSampleType": "uint16",
+        "sha256": "416d1b3c38314280a06b6a7515c83cf0f27453e2a984347c67e0b9278d951d21"
+      }
+    },
+    "fixtures/fx.workshop.room/textures/noise_Floor_M_FloorPlanks.png": {
+      "source": "fx.workshop.room/textures/noise_Floor_M_FloorPlanks.png",
+      "sourceSha256": "b67aba46a4abf6b7d46749dc2dd00488a460a7c0e394a1748a07bc239ae6fd75",
+      "publicSha256": "7f5422f3ba7a03a59dfbba53d3de267b4b85d02bc8e909dda507a2b57c698189",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "e11cd4784e54edc89f5250ce3aa2e6feb86e2f85c8ac35770b446d290e16b4c4",
+      "decodedNativeSamples": {
+        "width": 1024,
+        "height": 1024,
+        "channels": 3,
+        "nativeSampleType": "uint16",
+        "sha256": "c265a7417c2f1507bae078ee8601667085488951cf97bc848d0a6be90a08d38e"
+      }
+    },
+    "fixtures/fx.workshop.room/workshop.usdc": {
+      "source": "fx.workshop.room/workshop.usdc",
+      "sourceSha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+      "publicSha256": "52afec8f63ab33aff9b099949c692c3f11384cde7410f95bd23f3bed64b0823b",
+      "treatment": "unchanged"
+    },
+    "fixtures/fx.workshop.room/fixture.json": {
+      "source": "fx.workshop.room/fixture.json",
+      "sourceSha256": "9bfc175b2e1171ad3de25cbc337b62a1d33c51511e1370af423a9de873f24850",
+      "publicSha256": "f7e703846f10a7a4ddc8101ad4f1243b1f49848e062deb2ea2f7a1213a98eeae",
+      "treatment": "Public reference hashes and packaged scene paths updated"
+    },
+    "captures/direct/cam_A.png": {
+      "source": "B01 window-contact direct/cam_A",
+      "sourceSha256": "a710f3d618717699a6c2f390ca8651f32176f230041786e08bc821a9fae8d235",
+      "publicSha256": "2ef3c773eb1ccbc8068039d5677f707a2740a2a9e69a44d8d85d423aea81932e",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "1834b112e7fe49d271062172df17537971315914eb3b70090ba1609a53e2bcda",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "d58160606451a7158f2e67055331a2d63f5e03ec5549c14b0641c68723b8917d"
+      }
+    },
+    "captures/direct/cam_B.png": {
+      "source": "B01 window-contact direct/cam_B",
+      "sourceSha256": "28c44aa7e631e571ee891224829862b8bd1f7db30c36748f5cc4de47d8bbb042",
+      "publicSha256": "a7d8ed33b9190d1c9bce8448540a73b91855b4b749801e5bcebab8bddfcd897b",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "46a921222b0556e906394bc6516fa12473436e711b3e9ae088f5e64234be07c3",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "97e71e3ccee2be35b1173e655ec181d026d4b83f84629bf08e84d1a91e233bff"
+      }
+    },
+    "captures/direct/cam_C.png": {
+      "source": "B01 window-contact direct/cam_C",
+      "sourceSha256": "4a9750d7182f47b53511a563d30fbbf8a08ce141a5fa6624e3ecf101a673eaf4",
+      "publicSha256": "9cca6d172932509228b723da704eaffe3575b3f9b8f45821c11143ca798af152",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "533f32b30880f7310945c17723b0623b06985ea0e6c5bfc41fd815c06a0988aa",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "d52df7dc8d7c7c03174cfaf5922a47e7dc5b3d3b1ee19859bc4df50f9bbbd809"
+      }
+    },
+    "captures/direct_area/cam_A.png": {
+      "source": "B01 window-contact direct_area/cam_A",
+      "sourceSha256": "41a623d04e93d1e97e2a33aff84ba9aee103feeb546e3575fc952712ad2fc548",
+      "publicSha256": "2218cc18636ac250f6fa25cadf7b3ffd912eb47b84f47a2d61d3458fed45c172",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "ca316772f148c0225067ccb9095ec65dcf3209cafb362d6ea74f89774a0f3396",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "5fc87e38e7279596f42e12c56373f469e36f965ca8b5b9b442e55d7b1533a0e2"
+      }
+    },
+    "captures/direct_area/cam_B.png": {
+      "source": "B01 window-contact direct_area/cam_B",
+      "sourceSha256": "53855d1eef3afc6e723a753b9db3f3ae934d411a5983c3e2c9235e007da9f49f",
+      "publicSha256": "43a35bbe8a7112657647c2a1ad73f285a666310d2b7528e4e22bdf12c453caff",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "ec4b3c50f636e57164f80e88b7c2006353a202e468f2e066cbd93742ac5cfd27",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "1d66bed79d1cab0f891f270396ac0c5934565d3d97fd4ef81b5a76697c3610d9"
+      }
+    },
+    "captures/direct_area/cam_C.png": {
+      "source": "B01 window-contact direct_area/cam_C",
+      "sourceSha256": "30db7dc95c197df862b284f61f037de52adc60f6dac3de0809183a807c23eb4f",
+      "publicSha256": "f855ffaf4899a688c26f10d99227e1421d0bf6e8969eee8ebac280dc3edb11fe",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "6f4a98240336a0be2d4771e2be99d0036846a4d8825e6abfea5679c9b484bafd",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "4ccca7c4fc0bfbedff84fed67a958e971abbf0f3187fd9eda416564238b6ee64"
+      }
+    },
+    "captures/direct_point/cam_A.png": {
+      "source": "B01 window-contact direct_point/cam_A",
+      "sourceSha256": "2bbba9eb46df0ea02d87b992c0c673aa1cf1e1eedcf1930e5ac73fc05bd056ff",
+      "publicSha256": "4ee66111b18a837f2be45660bc99c46150e636de56ddc234c51951e7c038c724",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "c057ed1e616d3bbbc73c519d6999095f1118fa273fc1edb76acb793c23411c43",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "f6ea4c97488f0f5ff683df6f04b60630a72a84b06b6848006518dce93ab2c6d3"
+      }
+    },
+    "captures/direct_point/cam_B.png": {
+      "source": "B01 window-contact direct_point/cam_B",
+      "sourceSha256": "8c3e9a95ecb7c283926601e032df5914db354d96b814cda5108011110ed7bd3d",
+      "publicSha256": "49c2c143fa7da731dc25629e9f9463199c3bd9823c312c5ee42ed2b633f2bae4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "d41f294b395f1c159328aac9db2dff3512e42890f85103de2a7e10e34d90227c",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "450050adb200f8d3ce930e50fffb14b43a0ca68bb2bef1f599391404681ea9ef"
+      }
+    },
+    "captures/direct_point/cam_C.png": {
+      "source": "B01 window-contact direct_point/cam_C",
+      "sourceSha256": "928334090229590028a8dd797619245d6869a95d05b819ffd2cca049d933b31f",
+      "publicSha256": "c17cdd699e9f46edd042767896c4ad75802fa7e34b576679238c906b328a3aa6",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "068b62c8cd20dc080703e541673d4cc24467ad9c48bc9be9e102fadc47fde6b7",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "c61845b1d75aeeffaca1fe3ed11784a7080fa220f38a0791230d6ebefed6aa4d"
+      }
+    },
+    "captures/direct_sun/cam_A.png": {
+      "source": "B01 window-contact direct_sun/cam_A",
+      "sourceSha256": "d60ffa1b2ed5a32cb70d0e48a2118af7304dfd9fc024efab19acb4e6e1000bd5",
+      "publicSha256": "427a4969ae737f386414a503c1480e8719e6e7d8f5d708dedcd658a4fd10e262",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "3d78364d64ce2eb4aac0f138d740f84792795726f9afa0f89bfc794de90df882",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "9d464e8b4cb42742e4fc42f1d864738b6f9806d6f33a55a1bd2372dd28a4011e"
+      }
+    },
+    "captures/direct_sun/cam_B.png": {
+      "source": "B01 window-contact direct_sun/cam_B",
+      "sourceSha256": "4075ccc66244d53a5407f484a9594262c89a26b23d1833eaf7a0f53995f86fb3",
+      "publicSha256": "107bec256d9d54448f8f975d043964c627ad0449add8e4b64f1c81549be6870a",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "ee5ff9bddd8494740b3b41a1f6c6fc94c6f6d6bafad9ad42d3a548d189e33bd6",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "0410261b2670af46a1e4c28bc2a4b38be52117f014c4b0b59fcc75ce118d5b55"
+      }
+    },
+    "captures/direct_sun/cam_C.png": {
+      "source": "B01 window-contact direct_sun/cam_C",
+      "sourceSha256": "93d26efc6d7b8b8ab572b6faf3cf062f2884f2b595e44a37e6125c400ccd3843",
+      "publicSha256": "2fbf61f3fa1f7ced614477e5166a9c48c9d7555480c164357b71aa718fe50f58",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "a09562aeff3ed509184e91e9017335fdba6a82414f03fa869b040b814523ba8a",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "f90170c28abf3b7a395c35af1baaf77d25e39145614444fe49083edb2b73c435"
+      }
+    },
+    "captures/direct_world/cam_A.png": {
+      "source": "B01 window-contact direct_world/cam_A",
+      "sourceSha256": "b648a3973827aeb7646dddfcbf5df7b910f3716b81c1a58d2a80be45e06203b7",
+      "publicSha256": "a9a4f6775cd94f97259166b480731d93d1a9437605606df5d78f9c384b892a2c",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "e4cb5aee74e1e5a3d49a01c66e1fae5a2217f013a2c20b3a01d350009551b6a3",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "c6cc2fb3ec2006b57ec02a9f3808dadc29c1899065ae215224295e559d263e1e"
+      }
+    },
+    "captures/direct_world/cam_B.png": {
+      "source": "B01 window-contact direct_world/cam_B",
+      "sourceSha256": "f3bfc76034501bf1eb0a5231d1513a781fcb4265df01435a68d47d4417eea7d8",
+      "publicSha256": "d718a4d86a0328d416e6b84f92934b798d951a9b241c70e1abb3fc32f9aba6c4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "91421d5529c329f8b57f5e38156347691f075ab9a36878de8ac54230fa4334e3",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "5c1f69d049e700c03930ab0de5e27086ce5e4446dd1034d1038fac3cda512f56"
+      }
+    },
+    "captures/direct_world/cam_C.png": {
+      "source": "B01 window-contact direct_world/cam_C",
+      "sourceSha256": "4e5f86982cc5e99f5adfcc10307d720fddeca4ca7ecb53a80a61cb5202ff21c5",
+      "publicSha256": "7ee448144741832d5e2154d00d91c766eeb53d921669030c5e136bfd57821d8b",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "dbc7da937660252497608f0d1cd62ad08eeb84ff50023f131edfc1f4dc1c56c9",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "a1c29b2fc9f9fa9194b2f6a6ceb009c1ca2d4ff6c3c21e133a00bfc12504476e"
+      }
+    },
+    "captures/direct_world_nobump/cam_A.png": {
+      "source": "B01 window-contact direct_world_nobump/cam_A",
+      "sourceSha256": "43be731e509e542ba1d09f18bbd09b7410e3db575de6c0df05703bd5b192d6ce",
+      "publicSha256": "1fbe9210d9d8a41f0d70de1d032d36f07bc8647d28e8a8cb98e308dc89847eff",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "d83cf0d825fc8c5561d7b481d4dae5325e81a0c5796cbdc3ab0f8fdde8f88bce",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "3c85f61c3672d127822413deac621daad55bbdfcfbdafa296fc82276e470c1bc"
+      }
+    },
+    "captures/direct_world_nobump/cam_B.png": {
+      "source": "B01 window-contact direct_world_nobump/cam_B",
+      "sourceSha256": "7e74f9d2d502787972621e2d2dbf679e76ad0c680dba5b9cabcdd29a4259fc30",
+      "publicSha256": "756496f21062035f10c204b4745c25c79678c30a461826fe2d13276c652b74cf",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "41c332804be35bf29f1d1be57a2b1fd85c15dd876ae7bd87af3c979c593554d9",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "30d0e75157925a5fe387eb2a76d578cf2320d5216edb3e9644d02c4f795781f1"
+      }
+    },
+    "captures/direct_world_nobump/cam_C.png": {
+      "source": "B01 window-contact direct_world_nobump/cam_C",
+      "sourceSha256": "f734128dbea2df4ced48552e0dea56b9d8d77352797b92c0db118c530fd8a3e2",
+      "publicSha256": "6e4b94317c560623980bcd5d8b27c817b68b2ba16f3705db3c6bd780e80f62b4",
+      "treatment": "PNG metadata removed",
+      "removedChunks": [
+        "eXIf"
+      ],
+      "uncompressedScanlineSha256": "ee7ad5c622ac13d08c1eb10d10521be3a699e4760ff3f756a406ca0ea08d1029",
+      "decodedNativeSamples": {
+        "width": 960,
+        "height": 540,
+        "channels": 3,
+        "nativeSampleType": "uint8",
+        "sha256": "c70ee22c1b5befb29bb94beb6f79b13eb0b13fbd33756ac6f6426424d7d0db09"
+      }
+    },
+    "fixtures/fx.workshop.room/import-manifest.json": {
+      "source": "fx.workshop.room/import-manifest.json",
+      "sourceSha256": "cae1c906e0e6899dc1d123c66b17d0e70640e1da47cfc4affb11a1506dcd0f65",
+      "publicSha256": "ee86131078af039c7a93ad85a65792d6deb38b843412ac860b4427fd7c0d9720",
+      "treatment": "Public export summary with relative paths; historical exporter blend and observed source blend identify distinct snapshots"
+    }
+  }
+}
