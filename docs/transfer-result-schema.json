@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Transfer measurement row: JSONL or typed CSV",
+  "description": "One attempt; at most one accepted proposal. Every task/repeat requires all six arms with matching seeds. endpoint_eligible is preregistered per task. passed denotes ineligible read-only/refusal success. Every cost retained, including failed/timeout costs. public_holdout is per task. budget_s is common administrative horizon. source_class trusted is producer assertion requiring external receipts, not authenticated by this schema. Additional invariants enforced by bootstrap.validate.",
+  "type": "object",
+  "required": [
+    "arm",
+    "task",
+    "split",
+    "repeat",
+    "seed",
+    "status",
+    "proposals",
+    "probes",
+    "tokens",
+    "wall_s",
+    "budget_s",
+    "invariant_rejections",
+    "model_id",
+    "harness_id",
+    "prompt_sha256",
+    "task_sha256",
+    "store_sha256",
+    "source_class",
+    "public_holdout",
+    "learner_records",
+    "endpoint_eligible"
+  ],
+  "properties": {
+    "arm": {
+      "enum": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ]
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "split": {
+      "enum": [
+        "S",
+        "U",
+        "N"
+      ]
+    },
+    "repeat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "status": {
+      "enum": [
+        "accepted",
+        "passed",
+        "failed",
+        "timeout"
+      ]
+    },
+    "proposals": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "probes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "wall_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "budget_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "invariant_rejections": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "harness_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "task_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "store_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_class": {
+      "enum": [
+        "synthetic",
+        "trusted"
+      ]
+    },
+    "public_holdout": {
+      "type": "boolean"
+    },
+    "learner_records": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "endpoint_eligible": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

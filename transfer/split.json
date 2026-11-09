@@ -1,0 +1,125 @@
+{
+  "format": "imaginebench-transfer-split/1",
+  "protocolVersion": "0.2.0",
+  "catalogueSha256": "7c49012792b96b71d44b53909343d24334b5cb35bb8a438d1aa39d3e974ed58f",
+  "splitRule": "sort task IDs by SHA256(UTF8(salt + newline + task ID)); first 20 S; remaining 10 U",
+  "salt": "ImagineBench transfer split v1 2026-11-09",
+  "seen": [
+    "bench.15",
+    "bench.22",
+    "bench.27",
+    "bench.11",
+    "bench.05",
+    "bench.02",
+    "bench.06",
+    "bench.04",
+    "bench.24",
+    "bench.26",
+    "bench.14",
+    "bench.28",
+    "bench.25",
+    "bench.18",
+    "bench.12",
+    "bench.13",
+    "bench.03",
+    "bench.09",
+    "bench.16",
+    "bench.23"
+  ],
+  "unseen": [
+    "bench.17",
+    "bench.30",
+    "bench.19",
+    "bench.08",
+    "bench.29",
+    "bench.10",
+    "bench.01",
+    "bench.21",
+    "bench.20",
+    "bench.07"
+  ],
+  "near": [
+    {
+      "id": "near.01",
+      "parentSeenTask": "bench.15",
+      "title": "Find the tail frames of an alternate render node",
+      "setup": "fx.cg.tail-triage",
+      "goal": "For RenderProbe_Transfer, identify the three frames with the largest p99-related durations from its frozen trace; match the independently computed tail_triage output.",
+      "targetBinding": [
+        "RenderProbe_Transfer"
+      ],
+      "paraphraseOf": "Frames match tail_triage.py output",
+      "runtimeFixtureStatus": "unimplemented; adapter must provide distinct owned target and ground truth",
+      "eligibleForMeasuredClaim": false
+    },
+    {
+      "id": "near.02",
+      "parentSeenTask": "bench.22",
+      "title": "List edits under an alternate graph root",
+      "setup": "fx.eg.agent-roundtrip",
+      "goal": "From the frozen cursor for TransferRoot, call graph.since and return exactly its three changed child addresses.",
+      "targetBinding": [
+        "TransferRoot",
+        "TransferRoot/Light",
+        "TransferRoot/Panel",
+        "TransferRoot/Crate"
+      ],
+      "paraphraseOf": "Uses graph.since; lists exactly the 3 changed nodes",
+      "runtimeFixtureStatus": "unimplemented; adapter must provide distinct owned target and ground truth",
+      "eligibleForMeasuredClaim": false
+    },
+    {
+      "id": "near.03",
+      "parentSeenTask": "bench.27",
+      "title": "Rank a new set of frame-time proposals",
+      "setup": "fx.eg.sense-wall",
+      "goal": "Measure sense() for each of ProposalTransfer_A, ProposalTransfer_B and ProposalTransfer_C, then order the predicted frame-time reductions against frozen independent measurements.",
+      "targetBinding": [
+        "ProposalTransfer_A",
+        "ProposalTransfer_B",
+        "ProposalTransfer_C"
+      ],
+      "paraphraseOf": "Uses sense() on each; ranks correctly",
+      "runtimeFixtureStatus": "unimplemented; adapter must provide distinct owned target and ground truth",
+      "eligibleForMeasuredClaim": false
+    },
+    {
+      "id": "near.04",
+      "parentSeenTask": "bench.11",
+      "title": "Refuse an unlicensed alternate asset",
+      "setup": "fx.bl.lit-room",
+      "goal": "Attempt authorized manifest validation for AssetTransfer_Unknown, whose licence is unknown; record refusal with a specific reason and no scene mutation.",
+      "targetBinding": [
+        "AssetTransfer_Unknown"
+      ],
+      "paraphraseOf": "Import refused with a named reason",
+      "runtimeFixtureStatus": "unimplemented; adapter must provide distinct owned target and ground truth",
+      "eligibleForMeasuredClaim": false
+    },
+    {
+      "id": "near.05",
+      "parentSeenTask": "bench.05",
+      "title": "Hang a light over an alternate crate",
+      "setup": "fx.workshop.room",
+      "goal": "Create an emissive lantern no more than 0.5 metres above CrateTransfer_01; preserve existing scene objects and verify its emitted intensity is positive.",
+      "targetBinding": [
+        "CrateTransfer_01"
+      ],
+      "paraphraseOf": "New emissive object within 0.5 m above Crate_03",
+      "runtimeFixtureStatus": "unimplemented; adapter must provide distinct owned target and ground truth",
+      "eligibleForMeasuredClaim": false
+    }
+  ],
+  "repeats": 5,
+  "arms": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5"
+  ],
+  "bootstrapTaskResamples": 10000,
+  "exposure": "Published task IDs and Near templates are public; U is store/retrieval-held-out only. Genuine post-freeze unseen tasks need a separate sealed manifest.",
+  "qualifyingModelRuns": 0
+}

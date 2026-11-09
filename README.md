@@ -18,6 +18,8 @@ Three temperature-zero repeats with a named immutable model and all budget measu
 
 ## Results
 
+Version 0.2.0 adds the [cross-cohort transfer protocol](transfer/PROTOCOL.md), a frozen-store option for the N09 runner, a length-matched placebo selector and paired-task bootstrap analysis. The public Seen/Unseen split is store-held-out, not demonstrated model-unseen. Near targets still require runtime fixtures. The stub authenticates and records a supplied store but does not consume it for retrieval. Transfer benefit remains unmeasured; no model or classroom trials ran.
+
 See the [results dashboard](RESULTS.md). The parity directory documents the retained historical results. Stub runs report only deterministic grader/adapter conformance. No cross-engine leaderboard or claim of superiority is established. To document an external reproduction, record the repository commit, manifest hash, command, environment and complete output, including misses/skips.
 
 ## Licences

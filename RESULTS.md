@@ -1,4 +1,4 @@
-# Results dashboard — v0.1.0
+# Results dashboard — v0.2.0
 
 | Workload | Recorded result | Qualification |
 | --- | --- | --- |
@@ -10,6 +10,8 @@
 | Black-image negative | Exceeds the direct-workshop threshold | Expected rejection, not a renderer score |
 | N09 stub | 30 tasks × 3 deterministic repeats | Synthetic grader/adapter conformance only |
 | N09 model success | Unmeasured | No model/agent execution or benchmark superiority claim |
+| Frozen-store and placebo tools | Offline structural conformance tests | Hash integrity and controlled read-only input; external acceptance authority is not authenticated by hashes |
+| Transfer bootstrap | Synthetic paired-task fixtures | No measured transfer benefit; real task membership, runtime receipts and preregistered equivalence remain required |
 | Outside-party reproduction | Pending | Project agents and creator do not satisfy this criterion |
 
 Full references are retained separately from the direct-light workloads. These historical direct results do not establish full global-illumination acceptance. Source authoring .blend is omitted because saved state retained private host paths; portable USD/texture/reference/capture inputs support metric replay, not rebuilding the original Blender authoring session.

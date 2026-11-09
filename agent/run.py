@@ -9,6 +9,7 @@ import tempfile
 
 from graders import MissingEvidence, authority, evaluate, fingerprint, numeric
 from stub import StubAdapter
+from store import load_store
 
 
 CATALOGUE = Path(__file__).with_name("agent-bench.json")
@@ -85,7 +86,20 @@ def main():
     parser.add_argument("--unavailable",action="append",default=[],help="Simulate a missing adapter surface by task ID")
     parser.add_argument("--output",type=Path,help="Write a fresh JSON report instead of stdout")
     parser.add_argument("--scratch",type=Path,help="Existing writable directory for a temporary generated PNG")
+    parser.add_argument("--store", type=Path, help="Frozen recipe/prior manifest (read-only experiment)")
+    parser.add_argument("--store-sha256", help="Independently frozen SHA256 of exact manifest bytes")
+    parser.add_argument("--store-experiment", action="store_true", help="Opt in to read-only experiment validation, including A5")
     args=parser.parse_args()
+    snapshot = None
+    if args.store is not None:
+        if args.store_sha256 is None:
+            parser.error("--store requires --store-sha256")
+        try:
+            snapshot = load_store(args.store, args.store_sha256, experiment=args.store_experiment)
+        except (ValueError, OSError) as error:
+            parser.error("store refused: " + str(error))
+    elif args.store_sha256 is not None or args.store_experiment:
+        parser.error("--store-sha256 and --store-experiment require --store")
     tasks=catalogue()["tasks"]
     ids={t["id"] for t in tasks}
     unknown=(set(args.task or [])|set(args.unavailable))-ids
@@ -95,6 +109,13 @@ def main():
         stub=StubAdapter(scratch)
         stub.unavailable.update(args.unavailable)
         report=run_suite([t for t in tasks if args.task is None or t["id"] in args.task],stub)
+    if snapshot is not None:
+        report["store"] = {"sha256": snapshot.sha256, "validated": True,
+                           "experimentOnly": True, "dataClass": snapshot.manifest["dataClass"],
+                           "executionDataClass": "synthetic", "externalAuthorityAuthenticated": False,
+                           "recordCount": len(snapshot.records), "consumedByAdapter": False,
+                           "transferBenefit": None,
+                           "scope": "Integrity/admission validation only; stub does not consume store contents"}
     text=json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False)+"\n"
     if args.output:
         with args.output.open("x",encoding="utf-8",newline="\n") as stream:
