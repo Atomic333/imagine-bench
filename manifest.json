@@ -8,45 +8,15 @@
   "learnerDataIncluded": false,
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "license": "MIT"
+    },
+    {
       "path": ".gitignore",
       "bytes": 35,
       "sha256": "0b4a7845b38e282b73e0043a31900ca9e0e526ba23e9b6f4f06b33f68655689e",
-      "license": "MIT"
-    },
-    {
-      "path": "agent/agent-bench.json",
-      "bytes": 10613,
-      "sha256": "7c49012792b96b71d44b53909343d24334b5cb35bb8a438d1aa39d3e974ed58f",
-      "license": "CC-BY-4.0"
-    },
-    {
-      "path": "agent/graders.py",
-      "bytes": 14683,
-      "sha256": "89eb01592a5b5d947bdad56b847fc8c668310f345e2d0f0b5347b7334488b900",
-      "license": "MIT"
-    },
-    {
-      "path": "agent/PLAN.md",
-      "bytes": 910,
-      "sha256": "0b9c415d108c6faf71afb003c86563247e2f76bf51179b8fd0f47f85990156f2",
-      "license": "MIT"
-    },
-    {
-      "path": "agent/README.md",
-      "bytes": 4651,
-      "sha256": "79302628da60d1ca507d7786f7a33ae2ded22ba9d84251f6f78bf076b2df46f7",
-      "license": "MIT"
-    },
-    {
-      "path": "agent/run.py",
-      "bytes": 5332,
-      "sha256": "0a4a731851d4b8e700f5477da3fcc93c27e17b84808622e67215c3219da31e4c",
-      "license": "MIT"
-    },
-    {
-      "path": "agent/stub.py",
-      "bytes": 9050,
-      "sha256": "d15b5b13f9552caf6a12291212ea4cecfb61edf73e106b46292727bb49e2f268",
       "license": "MIT"
     },
     {
@@ -65,6 +35,66 @@
       "path": "NOTICES.md",
       "bytes": 1036,
       "sha256": "bf808c6513b98efcfe5e82904ee87c6fba9036c6721a280bdffde9319dc10256",
+      "license": "MIT"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2428,
+      "sha256": "603fb394cb0e8e2f82ae8d87ff5f67848d47a97dc90cd7de75bdc6ac6d244396",
+      "license": "MIT"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 1398,
+      "sha256": "a4de17cc6703ceee78d5c01e9f46ee66e8a6e20a57194ea6276bb1c466b2b8de",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/PLAN.md",
+      "bytes": 910,
+      "sha256": "0b9c415d108c6faf71afb003c86563247e2f76bf51179b8fd0f47f85990156f2",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/README.md",
+      "bytes": 4651,
+      "sha256": "79302628da60d1ca507d7786f7a33ae2ded22ba9d84251f6f78bf076b2df46f7",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/agent-bench.json",
+      "bytes": 10613,
+      "sha256": "7c49012792b96b71d44b53909343d24334b5cb35bb8a438d1aa39d3e974ed58f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "agent/graders.py",
+      "bytes": 14683,
+      "sha256": "89eb01592a5b5d947bdad56b847fc8c668310f345e2d0f0b5347b7334488b900",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/run.py",
+      "bytes": 5332,
+      "sha256": "0a4a731851d4b8e700f5477da3fcc93c27e17b84808622e67215c3219da31e4c",
+      "license": "MIT"
+    },
+    {
+      "path": "agent/stub.py",
+      "bytes": 9050,
+      "sha256": "d15b5b13f9552caf6a12291212ea4cecfb61edf73e106b46292727bb49e2f268",
+      "license": "MIT"
+    },
+    {
+      "path": "parity/README.md",
+      "bytes": 3613,
+      "sha256": "600f732dbdea15559babd852ce2d6d70cb23772920af1a9705c39c5ae6c628cd",
       "license": "MIT"
     },
     {
@@ -344,12 +374,6 @@
       "license": "CC0-1.0"
     },
     {
-      "path": "parity/fixtures/fx.workshop.room/textures/color_0C0F14.exr",
-      "bytes": 465,
-      "sha256": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
-      "license": "CC0-1.0"
-    },
-    {
       "path": "parity/fixtures/fx.workshop.room/textures/IMAGINE_LUT_af9954966db0.png",
       "bytes": 537,
       "sha256": "da1315df64a61ccc31d1813a7c09bf8c86e9fc0462a2a8093bb751a09e71f1b4",
@@ -359,6 +383,12 @@
       "path": "parity/fixtures/fx.workshop.room/textures/IMAGINE_LUT_b32d905fec9a.png",
       "bytes": 606,
       "sha256": "bc66be6bc794cb895bf69c574f078c16b137530a4071b553cd7900779c17286f",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "parity/fixtures/fx.workshop.room/textures/color_0C0F14.exr",
+      "bytes": 465,
+      "sha256": "c8aadeefdd0fd76a255e5b3040e824effe768d7c4f29eb3329ce368c32cef3e2",
       "license": "CC0-1.0"
     },
     {
@@ -416,12 +446,6 @@
       "license": "CC-BY-4.0"
     },
     {
-      "path": "parity/README.md",
-      "bytes": 3613,
-      "sha256": "600f732dbdea15559babd852ce2d6d70cb23772920af1a9705c39c5ae6c628cd",
-      "license": "MIT"
-    },
-    {
       "path": "parity/reproduce.py",
       "bytes": 3954,
       "sha256": "cdcc35dcf310ba0979a3780a43c41c8f697bcfdfc8db91e3db26be633a00f95b",
@@ -432,18 +456,6 @@
       "bytes": 28,
       "sha256": "172e9ac1e2fee27cbad9a1ac0d62b903960e8c86e287f1c8f9851def49c70afd",
       "license": "MIT"
-    },
-    {
-      "path": "README.md",
-      "bytes": 2428,
-      "sha256": "603fb394cb0e8e2f82ae8d87ff5f67848d47a97dc90cd7de75bdc6ac6d244396",
-      "license": "MIT"
-    },
-    {
-      "path": "RESULTS.md",
-      "bytes": 1398,
-      "sha256": "a4de17cc6703ceee78d5c01e9f46ee66e8a6e20a57194ea6276bb1c466b2b8de",
-      "license": "CC-BY-4.0"
     },
     {
       "path": "tests/test_agent.py",
@@ -461,12 +473,6 @@
       "path": "verify_release.py",
       "bytes": 2577,
       "sha256": "a643aed59c1e971d71b30f00baf7f31ebb0c411ab2899b77b664ec51fe5ef8ee",
-      "license": "MIT"
-    },
-    {
-      "path": "VERSION",
-      "bytes": 6,
-      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
       "license": "MIT"
     }
   ]
